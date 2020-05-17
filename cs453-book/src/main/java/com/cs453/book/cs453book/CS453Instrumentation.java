@@ -2,17 +2,17 @@ package com.cs453.book.cs453book;
 
 import graphql.ExecutionResult;
 import graphql.ExecutionResultImpl;
-import graphql.execution.instrumentation.*;
+import graphql.execution.instrumentation.InstrumentationContext;
+import graphql.execution.instrumentation.InstrumentationState;
+import graphql.execution.instrumentation.SimpleInstrumentation;
+import graphql.execution.instrumentation.SimpleInstrumentationContext;
 import graphql.execution.instrumentation.parameters.InstrumentationExecutionParameters;
-import graphql.execution.instrumentation.parameters.InstrumentationExecutionStrategyParameters;
 import graphql.execution.instrumentation.parameters.InstrumentationFieldFetchParameters;
 import graphql.schema.DataFetcher;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
-import java.util.logging.Logger;
 
 public class CS453Instrumentation extends SimpleInstrumentation {
 
