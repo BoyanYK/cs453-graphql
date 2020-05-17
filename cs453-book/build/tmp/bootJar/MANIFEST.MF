@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Main-Class: org.springframework.boot.loader.JarLauncher
+Start-Class: com.cs453.book.cs453book.Cs453BookApplication
+Spring-Boot-Version: 2.2.7.RELEASE
+Spring-Boot-Classes: BOOT-INF/classes/
+Spring-Boot-Lib: BOOT-INF/lib/
+
