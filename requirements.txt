@@ -1,0 +1,14 @@
+Package       Version
+------------- -------
+aniso8601     7.0.0  
+auger-python  0.1.35 
+funcsigs      1.0.2  
+graphene      2.1.8  
+graphql-core  2.3.2  
+graphql-relay 2.0.1  
+mock          4.0.2  
+pip           19.2.3 
+promise       2.3    
+Rx            1.6.1  
+setuptools    41.2.0 
+six           1.14.0 
