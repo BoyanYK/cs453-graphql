@@ -1,6 +1,6 @@
 import graphene
 
-from .data import get_character, get_droid, get_hero, get_human
+from .data import get_character, get_droid, get_hero, get_human, add_human
 
 
 class Episode(graphene.Enum):
@@ -49,4 +49,21 @@ class Query(graphene.ObjectType):
         return get_droid(id)
 
 
-schema = graphene.Schema(query=Query)
+class CreateHuman(graphene.Mutation):
+    human = graphene.Field(Human)
+
+    class Arguments:
+        id = graphene.ID()
+        name = graphene.String()
+        appears_in = graphene.List(Episode)
+
+    def mutate(self, info, id, name, appears_in):
+        human = Human(id, name, appears_in)
+        add_human(human)
+        return CreateHuman(human)
+
+
+class Mutation(graphene.ObjectType):
+    create_human = CreateHuman.Field()
+
+schema = graphene.Schema(query=Query, mutation=Mutation)

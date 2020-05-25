@@ -77,6 +77,10 @@ def get_character(id):
     return human_data.get(id) or droid_data.get(id)
 
 
+def add_human(human):
+    human_data[human.id] = human
+
+
 def get_friends(character):
     return map(get_character, character.friends)
 
