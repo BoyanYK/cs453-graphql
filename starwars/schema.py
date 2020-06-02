@@ -1,6 +1,6 @@
 import graphene
 
-from .data import get_character, get_droid, get_hero, get_human, add_human
+from starwars.data import get_character, get_droid, get_hero, get_human, add_human
 
 
 class Episode(graphene.Enum):
