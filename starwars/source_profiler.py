@@ -2,6 +2,9 @@ import ast
 import astor
 import logging
 
+from graphene.test import Client
+
+
 class profiler_vistor(ast.NodeVisitor):
     def __init__(self):
         a = 0
@@ -32,16 +35,34 @@ def main():
     log.setLevel(logging.INFO)
     log.addHandler(console)
 
-    fname = "schema.py"
-    with open(fname, "r") as source:
-        tree = ast.parse(source.read())
+    # fname = "schema.py"
+    # with open(fname, "r") as source:
+    #     tree = ast.parse(source.read())
+    import starwars.schema as schema
+    tree = astor.code_to_ast(schema)
+    print(tree)
 
-    y = profiler_transformer()
-    y.visit(tree)
-    compile(tree, fname, 'exec')
-    print("\n")
+    #TODO
+    # y = profiler_transformer()
+    # y.visit(tree)
+    # compile(tree, "fname", 'exec')
+    # print("\n")
+    # schema = compile(tree, "fname", 'exec')
+    # print(dir(schema))
+    # client = Client(schema)
+    # query = """
+    #     query FetchSomeIDQuery($someId: String!) {
+    #       human(id: $someId) {
+    #         name
+    #       }
+    #     }
+    # """
+    # params = {"someId": "3000"}
+    # print(client.execute(query, variables=params))
 
-    log.info(astor.to_source(tree))
+
+
+    # log.info(astor.to_source(tree))
 
 
 if __name__ == '__main__':
