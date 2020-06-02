@@ -1,6 +1,6 @@
 import ast
 import astor
-
+import logging
 
 class profiler_vistor(ast.NodeVisitor):
     def __init__(self):
@@ -27,6 +27,11 @@ class profiler_transformer(ast.NodeTransformer):
 
 
 def main():
+    log = logging.getLogger()
+    console = logging.StreamHandler()
+    log.setLevel(logging.INFO)
+    log.addHandler(console)
+
     fname = "schema.py"
     with open(fname, "r") as source:
         tree = ast.parse(source.read())
@@ -36,9 +41,7 @@ def main():
     compile(tree, fname, 'exec')
     print("\n")
 
-    print(astor.to_source(tree))
-
-
+    log.info(astor.to_source(tree))
 
 
 if __name__ == '__main__':
