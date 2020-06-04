@@ -97,3 +97,9 @@ def get_human(id):
 
 def get_droid(id):
     return droid_data.get(id)
+
+def get_human_data():
+    return human_data
+
+def get_droid_data():
+    return droid_data
