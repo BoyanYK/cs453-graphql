@@ -11,7 +11,7 @@ class Node(object):
         self.children = []
 
     def __str__(self):
-        return "{} @ Line {}".format(self.name, self.lineno)
+        return "{} @ Line {}, parent branch val {}".format(self.name, self.lineno, self.branch_value)
 
     def get_body(self):
         try:
@@ -35,14 +35,23 @@ class Node(object):
         return self.name == target[0] and self.lineno == target[3]
 
 def get_control_nodes(tree, func_name="test_me"):
-    arg_count = 0
+    """[summary]
+    Iterates the given module in a BFS fashion, searching for a given function name
+    Generates a list of control nodes
+    Args:
+        tree (ast.Module): Tree to be traversed
+        func_name (str, optional): [description]. Defaults to "test_me".
+
+    Returns:
+        ast.FunctionDef: Root node of target function
+        list: List of all nodes that influence branching off
+    """
     # * We first search for the target function within all nodes of the file
     # * And save it as an initial node
     tree_nodes = tree.body
     for stmt in tree_nodes:
         if isinstance(stmt, ast.FunctionDef) and stmt.name == func_name:
-            function = Node(stmt, 0)
-            arg_count = len(stmt.args.args)
+            function = Node(stmt, None, None)
             break
         try:
             tree_nodes += stmt.body
@@ -55,7 +64,10 @@ def get_control_nodes(tree, func_name="test_me"):
     while queue:
         node = queue.pop(0)
         for child in node.get_body():
-            child_node = Node(child, branch_value=True, parent=node)
+            branch_value = None
+            if isinstance(node.node, ast.If) or isinstance(node.node, ast.While):
+                branch_value = True
+            child_node = Node(child, branch_value=branch_value, parent=node)
             queue.append(child_node)
             node.add_child(child_node)
 
@@ -67,4 +79,31 @@ def get_control_nodes(tree, func_name="test_me"):
 
         if isinstance(node.node, ast.If) or isinstance(node.node, ast.While):
             flow_change.append(node)
-    return function, flow_change, arg_count
+    return function, flow_change
+
+def get_targets(tree, func_name="test_me"):
+    """[summary]
+    Given a (function) tree, get a dictionary of all target branches, along with the path to get there
+    The path involves branch conditions for each parent branch
+    Args:
+        tree (ast.Module): Tree that is to be traversed
+        func_name (str, optional): Function (name) to look for. Defaults to "test_me".
+
+    Returns:
+        dict: Target branches + execution path for each
+    """
+    root, flow_change  = get_control_nodes(tree, func_name)
+    targets = {}
+    for node in flow_change:
+        node_tree = [node]
+        iter_node = node
+        while not isinstance(iter_node.node, ast.FunctionDef):
+            parent = iter_node.parent
+            parent.branch_value = iter_node.branch_value
+            node_tree.append(parent)
+            iter_node = parent
+        node.branch_value = None
+        targets[node] = node_tree
+    return targets
+
+    
