@@ -2,6 +2,7 @@ import graphene
 
 from starwars.data import get_character, get_droid, get_hero, get_human, add_human
 
+
 class Episode(graphene.Enum):
     NEWHOPE = 4
     EMPIRE = 5
@@ -42,7 +43,7 @@ class Query(graphene.ObjectType):
         return get_hero(episode)
 
     def resolve_human(root, info, id):
-        info.context['trace'] += [1,2,3]
+        info.context['trace'] += [1, 2, 3]
         return get_human(id)
 
     def resolve_droid(root, info, id):
@@ -65,5 +66,6 @@ class CreateHuman(graphene.Mutation):
 
 class Mutation(graphene.ObjectType):
     create_human = CreateHuman.Field()
+
 
 schema = graphene.Schema(query=Query, mutation=Mutation)

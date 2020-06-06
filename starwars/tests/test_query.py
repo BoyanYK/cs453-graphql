@@ -112,7 +112,7 @@ def test_fetch_id_query_persistence():
 # * Then, the second test queries for the same data but as its a new instance, it gets no results (no persistence)
 # test_fetch_id_query_mutate_query()
 test_fetch_id_query_persistence()
-# test_hero_name_query()
+test_hero_name_query()
 
 def test_fetch_some_id_query2():
     query = """
