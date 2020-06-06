@@ -1,6 +1,6 @@
 import graphene
 
-from harrypotter.data import get_wizard, get_hero, get_muggle, add_wizard
+from harrypotter.data import get_wizard, get_hero, get_muggle, add_wizard, add_muggle
 
 
 class Book(graphene.Enum):
@@ -46,7 +46,6 @@ class Query(graphene.ObjectType):
         return get_hero(episode)
 
     def resolve_wizard(root, info, id):
-        info.context['trace'] += [1, 2, 3]
         return get_wizard(id)
 
     def resolve_muggle(root, info, id):
@@ -60,11 +59,13 @@ class CreateWizard(graphene.Mutation):
         id = graphene.ID()
         name = graphene.String()
         appears_in = graphene.List(Book)
+        signature_spell = graphene.String()
 
-    def mutate(self, info, id, name, appears_in):
-        wizard = Wizard(id, name, appears_in)
+    def mutate(self, info, id, name, appears_in, signature_spell):
+        wizard = Wizard(id, name, appears_in, signature_spell)
         add_wizard(wizard)
         return CreateWizard(wizard)
+
 
 class CreateMuggle(graphene.Mutation):
     Muggle = graphene.Field(Muggle)
@@ -76,8 +77,8 @@ class CreateMuggle(graphene.Mutation):
 
     def mutate(self, info, id, name, appears_in):
         muggle = Muggle(id, name, appears_in)
-        add_wizard(muggle)
-        return CreateWizard(muggle)
+        add_muggle(muggle)
+        return CreateMuggle(muggle)
 
 
 class Mutation(graphene.ObjectType):
