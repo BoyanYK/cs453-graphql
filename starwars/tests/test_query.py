@@ -103,14 +103,16 @@ def test_fetch_id_query_persistence():
       }
   """
   params = {"someId": "3000"}
-  print(client.execute(query, variables=params))
+  con = {"trace": []}
+  result = schema.execute(query, context=con)
+  # con is updated here
 
 # * Running these two tests consecutively should result in the first one querying, 
 # * getting no data, then mutating and getting data on the second query
 # * Then, the second test queries for the same data but as its a new instance, it gets no results (no persistence)
-test_fetch_id_query_mutate_query()
+# test_fetch_id_query_mutate_query()
 test_fetch_id_query_persistence()
-print(schema)
+# test_hero_name_query()
 
 def test_fetch_some_id_query2():
     query = """
