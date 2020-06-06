@@ -96,14 +96,15 @@ def get_targets(tree, func_name="test_me"):
     targets = {}
     for node in flow_change:
         node_tree = [node]
+        path = {}
         iter_node = node
-        while not isinstance(iter_node.node, ast.FunctionDef):
+        while not isinstance(iter_node.parent.node, ast.FunctionDef):
             parent = iter_node.parent
-            parent.branch_value = iter_node.branch_value
+            path[parent] = iter_node.branch_value
             node_tree.append(parent)
             iter_node = parent
-        node.branch_value = None
-        targets[node] = node_tree
+        path[node] = None
+        targets[node] = path
     return targets
 
     
