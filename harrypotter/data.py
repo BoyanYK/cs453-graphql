@@ -1,11 +1,11 @@
-human_data = {}
-droid_data = {}
+wizard_data = {}
+muggle_data = {}
 
 
 def setup():
     from .schema import Wizard, Muggle
 
-    global human_data, droid_data
+    global wizard_data, muggle_data
     harry = Wizard(
         id="1000",
         name="Harry Potter",
@@ -84,26 +84,34 @@ def setup():
 
 
 def get_character(id):
-    return wizard_data.get(id) or droid_data.get(id)
+    return wizard_data.get(id) or muggle_data.get(id)
 
 
-def add_human(human):
-    human_data[human.id] = human
+def add_wizard(wizard):
+    wizard_data[wizard.id] = wizard
+
+
+def add_muggle(muggle):
+    muggle_data[muggle.id] = muggle
 
 
 def get_friends(character):
     return map(get_character, character.friends)
 
 
-def get_hero(episode):
-    if episode == 5:
-        return human_data["1000"]
-    return droid_data["2001"]
+def get_hero(book):
+    if book in [5, 6, 7]:
+        return wizard_data["1000"]
+    return muggle_data["2001"]
 
 
-def get_human(id):
-    return human_data.get(id)
+def get_wizard(id):
+    return wizard_data.get(id)
 
 
-def get_droid(id):
-    return droid_data.get(id)
+def get_muggle(id):
+    return muggle_data.get(id)
+
+
+def get_char_traits(id):
+    return None

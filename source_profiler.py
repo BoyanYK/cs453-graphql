@@ -93,7 +93,7 @@ def main():
     y.visit(tree)
     # compile(tree, "fname", 'exec')
 
-    schema = compile(tree, "schema.py", "exec")
+    schema = compile(tree, "starwars/schema.py", "exec")
     print(astor.dump_tree(schema))
 
     # a = exec_with_return(schema)

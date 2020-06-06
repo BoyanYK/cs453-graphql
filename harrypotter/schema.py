@@ -1,5 +1,7 @@
 import graphene
 
+from harrypotter.data import get_character, get_wizard, get_hero, get_muggle, add_wizard
+
 
 class Book(graphene.Enum):
     ORDPHNX = 5
@@ -43,9 +45,9 @@ class Query(graphene.ObjectType):
     def resolve_hero(root, info, episode=None):
         return get_hero(episode)
 
-    def resolve_human(root, info, id):
+    def resolve_wizard(root, info, id):
         info.context['trace'] += [1, 2, 3]
-        return get_human(id)
+        return get_wizard(id)
 
-    def resolve_droid(root, info, id):
-        return get_droid(id)
+    def resolve_muggle(root, info, id):
+        return get_muggle(id)
