@@ -1,6 +1,6 @@
 import graphene
 
-from harrypotter.data import get_character, get_wizard, get_hero, get_muggle, add_wizard
+from harrypotter.data import get_wizard, get_hero, get_muggle, add_wizard
 
 
 class Book(graphene.Enum):
@@ -17,7 +17,7 @@ class Character(graphene.Interface):
 
     def resolve_friends(self, info):
         # The character friends is a list of strings
-        # return [get_character(f) for f in self.friends]
+        return [get_wizard(f) for f in self.friends]
         return None
 
 
@@ -25,7 +25,7 @@ class Muggle(graphene.ObjectType):
     class Meta:
         interfaces = (Character,)
 
-    magic_ability = graphene.Boolean
+    magical_ability = graphene.Boolean()
 
 
 # where should Lily Evans/Hermione Granger be placed...
@@ -51,3 +51,38 @@ class Query(graphene.ObjectType):
 
     def resolve_muggle(root, info, id):
         return get_muggle(id)
+
+
+class CreateWizard(graphene.Mutation):
+    Wizard = graphene.Field(Wizard)
+
+    class Arguments:
+        id = graphene.ID()
+        name = graphene.String()
+        appears_in = graphene.List(Book)
+
+    def mutate(self, info, id, name, appears_in):
+        wizard = Wizard(id, name, appears_in)
+        add_wizard(wizard)
+        return CreateWizard(wizard)
+
+class CreateMuggle(graphene.Mutation):
+    Muggle = graphene.Field(Muggle)
+
+    class Arguments:
+        id = graphene.ID()
+        name = graphene.String()
+        appears_in = graphene.List(Book)
+
+    def mutate(self, info, id, name, appears_in):
+        muggle = Muggle(id, name, appears_in)
+        add_wizard(muggle)
+        return CreateWizard(muggle)
+
+
+class Mutation(graphene.ObjectType):
+    create_wizard = CreateWizard.Field()
+    create_muggle = CreateMuggle.Field()
+
+
+schema = graphene.Schema(query=Query, mutation=Mutation)
