@@ -34,6 +34,13 @@ class Node(object):
     def compare(self, target):
         return self.name == target[0] and self.lineno == target[3]
 
+    def __eq__(self, target):
+        return isinstance(target, Node) and self.name == target.name and self.lineno == target.lineno
+
+    def __hash__(self):
+        return hash((self.name, self.lineno))
+
+
 def get_control_nodes(tree, func_name="test_me"):
     """[summary]
     Iterates the given module in a BFS fashion, searching for a given function name
