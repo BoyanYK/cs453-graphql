@@ -7,19 +7,19 @@ def setup():
 
     global wizard_data, muggle_data
     harry = Wizard(
-        id="1000",
+        id="3000",
         name="Harry Potter",
-        friends=["1001", "1002", "1004", "1003"],
-        appears_in=[5, 6, 7],
+        friends=["3001", "3002", "3004", "3003", "4001"],
+        appears_in=[55, 66, 77],
         signature_spell=['Expelliarmus'],
         primary_house=['Gryffindor']
     )
 
     hermione = Wizard(
-        id="1001",
+        id="3001",
         name="Hermione Granger",
-        friends=["1000", "1002", "1004"],
-        appears_in=[5, 6, 7],
+        friends=["3000", "3002", "3004"],
+        appears_in=[55, 66, 77],
         signature_spell=['Alohomora'],
         primary_house=['Gryffindor']
     )
@@ -27,10 +27,10 @@ def setup():
     # probably maxed stat wingardium leviosa
     # after incident with Hermione
     ron = Wizard(
-        id="1002",
+        id="3002",
         name="Ronald Weasley",
-        friends=["1000", "1001", "1004"],
-        appears_in=[5, 6, 7],
+        friends=["3000", "3001", "3004"],
+        appears_in=[55, 66, 77],
         signature_spell=['Wingardium Leviosa'],
         primary_house=['Gryffindor']
     )
@@ -38,48 +38,48 @@ def setup():
     voldemort = Wizard(
         id="1003",
         name="Tom Marvolo Riddle",
-        friends=["1000", "1004"],
-        appears_in=[5, 6, 7],
+        friends=["3000", "3004"],
+        appears_in=[55, 66, 77],
         signature_spell=['Expelliarmus'],
         primary_house=['Slytherin']
     )
 
     dumbledore = Wizard(
-        id="1004",
+        id="3004",
         name="Albus Percival Wulfric Brian Dumbledore",
-        friends=["1000", "1001", "1002", "1003"],
-        appears_in=[5, 6, 7],
+        friends=["3000", "3001", "3002", "3003"],
+        appears_in=[55, 66, 77],
         signature_spell=['Apparation'],
         primary_house=['Gryffindor']
     )
 
     frank = Muggle(
-        id="2000",
+        id="4000",
         name="Frank Bryce",
-        friends=["1000", "10003"],
-        appears_in=[6],
+        friends=["3000", "3003"],
+        appears_in=[66],
         magical_ability=False
     )
 
     dursley = Muggle(
-        id="2001",
+        id="4001",
         name="Dudley Dursley",
-        friends=["1001"],
-        appears_in=[5, 6, 7],
+        friends=["3001"],
+        appears_in=[55, 66, 77],
         magical_ability=False
     )
 
     wizard_data = {
-        "1000": harry,
-        "1001": hermione,
-        "1002": ron,
-        "1003": voldemort,
-        "1004": dumbledore,
+        "3000": harry,
+        "3001": hermione,
+        "3002": ron,
+        "3003": voldemort,
+        "3004": dumbledore,
     }
 
     muggle_data = {
-        "2000": frank,
-        "2001": dursley
+        "4000": frank,
+        "4001": dursley
     }
 
 
