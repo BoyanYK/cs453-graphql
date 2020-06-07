@@ -1,12 +1,14 @@
 import graphene
 from graphql import GraphQLError
 
-from starwars.data import get_character, get_droid, get_hero, get_human, add_human
-from harrypotter.data import get_wizard, get_hero, get_muggle, add_wizard, add_muggle
+import harrypotter
+import starwars
+from harrypotter.data import get_wizard, get_muggle, add_wizard, add_muggle
+from starwars.data import get_character, get_droid, get_human, add_human
 
 
 class ScType(graphene.Enum):
-    HP = 0
+    HP = 2
     SW = 1
 
 
@@ -20,6 +22,7 @@ class Episode(graphene.Enum):
 
 
 class Character(graphene.Interface):
+    sctype = graphene.List(ScType)
     id = graphene.ID()
     name = graphene.String()
     friends = graphene.List(lambda: Character)
@@ -60,27 +63,36 @@ class Wizard(graphene.ObjectType):
     primary_house = graphene.String()
 
 
+class Char(graphene.ObjectType):
+    class Meta:
+        interfaces = (Character,)
+
+
 class Query(graphene.ObjectType):
-    hero = graphene.Field(Character, episode=Episode())
+    hero = graphene.Field(Character, episode=Episode(), scType=ScType())
     human = graphene.Field(Human, id=graphene.String())
     droid = graphene.Field(Droid, id=graphene.String())
     wizard = graphene.Field(Wizard, id=graphene.String())
     muggle = graphene.Field(Muggle, id=graphene.String())
+    char = graphene.Field(Char, id=graphene.String())
 
-    def resolve_hero(root, info, episode=None):
-        return get_hero(episode)
+    def resolve_hero(root, info, episode=None, scType=None):
+        if scType == ScType.SW:
+            return starwars.data.get_hero(episode)
+        elif scType == ScType.HP:
+            return harrypotter.data.get_hero(episode)
 
     def resolve_char(root, info, id):
         if int(id) < 1000:
             return GraphQLError("Invalid ID")
-        elif 1000 >= int(id) < 2000:
-            return get_human()
-        elif 2000 >= int(id) < 3000:
-            return get_droid()
-        elif 3000 >= int(id) < 4000:
-            return get_wizard()
-        elif 4000 >= int(id) < 5000:
-            return get_muggle()
+        elif 1000 <= int(id) < 2000:
+            return get_human(id)
+        elif 2000 <= int(id) < 3000:
+            return get_droid(id)
+        elif 3000 <= int(id) < 4000:
+            return get_wizard(id)
+        elif 4000 <= int(id) < 5000:
+            return get_muggle(id)
         else:
             return GraphQLError("User does not exist")
 
@@ -101,14 +113,15 @@ class CreateHuman(graphene.Mutation):
     human = graphene.Field(Human)
 
     class Arguments:
+        sctype = graphene.List(ScType)
         id = graphene.ID()
         name = graphene.String()
         appears_in = graphene.List(Episode)
 
-    def mutate(self, info, id, name, appears_in):
-        #TODO to check for existing ID before mutate
-        if 1000 >= int(id) < 2000:
-            human = Human(id, name, appears_in)
+    def mutate(self, info,sctype, id, name, appears_in):
+        # TODO to check for existing ID before mutate
+        if 1000 <= int(id) < 2000:
+            human = Human(sctype, id, name, appears_in, sctype)
             add_human(human)
             return CreateHuman(human)
         else:
@@ -123,6 +136,7 @@ class CreateWizard(graphene.Mutation):
         name = graphene.String()
         appears_in = graphene.List(Episode)
         signature_spell = graphene.String()
+        sctype = graphene.List(ScType)
 
     def mutate(self, info, id, name, appears_in, signature_spell):
         if 3000 >= int(id) < 4000:
@@ -140,6 +154,7 @@ class CreateMuggle(graphene.Mutation):
         id = graphene.ID()
         name = graphene.String()
         appears_in = graphene.List(Episode)
+        sctype = graphene.List(ScType)
 
     def mutate(self, info, id, name, appears_in):
         if 4000 >= int(id) < 5000:

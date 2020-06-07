@@ -1,12 +1,14 @@
+from graphql import GraphQLError
+
 wizard_data = {}
 muggle_data = {}
 
 
 def setup():
-    from .schema import Wizard, Muggle
-
+    from starwars.schema import Wizard, Muggle
     global wizard_data, muggle_data
     harry = Wizard(
+        sctype=[2],
         id="3000",
         name="Harry Potter",
         friends=["3001", "3002", "3004", "3003", "4001"],
@@ -16,6 +18,7 @@ def setup():
     )
 
     hermione = Wizard(
+        sctype=[2],
         id="3001",
         name="Hermione Granger",
         friends=["3000", "3002", "3004"],
@@ -27,6 +30,7 @@ def setup():
     # probably maxed stat wingardium leviosa
     # after incident with Hermione
     ron = Wizard(
+        sctype=[2],
         id="3002",
         name="Ronald Weasley",
         friends=["3000", "3001", "3004"],
@@ -36,6 +40,7 @@ def setup():
     )
 
     voldemort = Wizard(
+        sctype=[2],
         id="1003",
         name="Tom Marvolo Riddle",
         friends=["3000", "3004"],
@@ -45,6 +50,7 @@ def setup():
     )
 
     dumbledore = Wizard(
+        sctype=[2],
         id="3004",
         name="Albus Percival Wulfric Brian Dumbledore",
         friends=["3000", "3001", "3002", "3003"],
@@ -54,6 +60,7 @@ def setup():
     )
 
     frank = Muggle(
+        sctype=[2],
         id="4000",
         name="Frank Bryce",
         friends=["3000", "3003"],
@@ -62,6 +69,7 @@ def setup():
     )
 
     dursley = Muggle(
+        sctype=[2],
         id="4001",
         name="Dudley Dursley",
         friends=["3001"],
@@ -99,10 +107,8 @@ def get_friends(character):
     return map(get_character, character.friends)
 
 
-def get_hero(book):
-    if book in [5, 6, 7]:
-        return wizard_data["1000"]
-    return muggle_data["2001"]
+def get_hero(episode):
+    return wizard_data["3000"]
 
 
 def get_wizard(id):
