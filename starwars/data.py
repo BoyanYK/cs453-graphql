@@ -7,6 +7,7 @@ def setup():
 
     global human_data, droid_data
     luke = Human(
+        sctype=[1],
         id="1000",
         name="Luke Skywalker",
         friends=["1002", "1003", "2000", "2001"],
@@ -15,6 +16,7 @@ def setup():
     )
 
     vader = Human(
+        sctype=[1],
         id="1001",
         name="Darth Vader",
         friends=["1004"],
@@ -23,6 +25,7 @@ def setup():
     )
 
     han = Human(
+        sctype=[1],
         id="1002",
         name="Han Solo",
         friends=["1000", "1003", "2001"],
@@ -31,6 +34,7 @@ def setup():
     )
 
     leia = Human(
+        sctype=[1],
         id="1003",
         name="Leia Organa",
         friends=["1000", "1002", "2000", "2001"],
@@ -39,6 +43,7 @@ def setup():
     )
 
     tarkin = Human(
+        sctype=[1],
         id="1004",
         name="Wilhuff Tarkin",
         friends=["1001"],
@@ -55,6 +60,7 @@ def setup():
     }
 
     c3po = Droid(
+        sctype=[1],
         id="2000",
         name="C-3PO",
         friends=["1000", "1002", "1003", "2001"],
@@ -63,6 +69,7 @@ def setup():
     )
 
     r2d2 = Droid(
+        sctype=[1],
         id="2001",
         name="R2-D2",
         friends=["1000", "1002", "1003"],
@@ -86,8 +93,6 @@ def get_friends(character):
 
 
 def get_hero(episode):
-    if episode == 5:
-        return human_data["1000"]
     return droid_data["2001"]
 
 
@@ -98,8 +103,10 @@ def get_human(id):
 def get_droid(id):
     return droid_data.get(id)
 
+
 def get_human_data():
     return human_data
+
 
 def get_droid_data():
     return droid_data

@@ -1,23 +1,29 @@
 from graphene.test import Client
 
-from starwars.data import setup
-from starwars.schema import schema
+from starwars.data import setup as swsetup
+from harrypotter.data import setup as hpsetup
+from starwars.schema import schema as schema
 
 
 def test_hero_name_query():
-    setup()
+    swsetup()
+    hpsetup()
     client = Client(schema)
     query = """
         query HeroNameQuery {
-          hero {
-            name
+          hero(scType:HP) {
+            name,
+            id
+            sctype
           }
         }
     """
     print(client.execute(query))
 
+
 def test_hero_name_and_friends_query():
-    setup()
+    swsetup()
+    hpsetup()
     client = Client(schema)
     query = """
         query HeroNameAndFriendsQuery {
@@ -32,8 +38,10 @@ def test_hero_name_and_friends_query():
     """
     client.execute(query)
 
+
 def test_nested_query():
-    setup()
+    swsetup()
+    hpsetup()
     client = Client(schema)
     query = """
         query NestedQuery {
@@ -53,7 +61,8 @@ def test_nested_query():
 
 
 def test_fetch_luke_query():
-    setup()
+    swsetup()
+    hpsetup()
     client = Client(schema)
     query = """
         query FetchLukeQuery {
@@ -64,23 +73,26 @@ def test_fetch_luke_query():
     """
     client.execute(query)
 
+
 def test_fetch_id_query_mutate_query():
-  setup()
-  client = Client(schema)
-  query = """
+    swsetup()
+    hpsetup()
+    client = Client(schema)
+    query = """
       query FetchSomeIDQuery($someId: String!) {
-        human(id: $someId) {
+        char(id: $someId) {
           name
         }
       }
   """
-  params = {"someId": "3000"}
-  mutate = """
+    params = {"someId": "1001"}
+    mutate = """
   mutation myFirstMutation {
       createHuman(
-          id: 3000,
+          id: 1001,
           name: "Anthony",
-          appearsIn: []) {
+          sctype: [SW],
+          appearsIn: [NEWHOPE]) {
               human {
                 name
               }
@@ -88,32 +100,35 @@ def test_fetch_id_query_mutate_query():
       
   }
   """
-  print(client.execute(query, variables=params))
-  print(client.execute(mutate))
-  print(client.execute(query, variables=params))
+    print(client.execute(query, variables=params))
+    print(client.execute(mutate))
+    print(client.execute(query, variables=params))
+
 
 def test_fetch_id_query_persistence():
-  setup()
-  client = Client(schema)
-  query = """
+    swsetup()
+    hpsetup()
+    client = Client(schema)
+    query = """
       query FetchSomeIDQuery($someId: String!) {
         human(id: $someId) {
           name
         }
       }
   """
-  params = {"someId": "3000"}
-  con = {"trace": []}
-  result = schema.execute(query, variables=params, context=con)
-  print(result)
-  # con is updated here
+    params = {"someId": "3000"}
+    con = {"trace": []}
+    result = schema.execute(query, context=con)
+    # con is updated here
 
-# * Running these two tests consecutively should result in the first one querying, 
+
+# * Running these two tests consecutively should result in the first one querying,
 # * getting no data, then mutating and getting data on the second query
 # * Then, the second test queries for the same data but as its a new instance, it gets no results (no persistence)
-# test_fetch_id_query_mutate_query()
+test_fetch_id_query_mutate_query()
 test_fetch_id_query_persistence()
 # test_hero_name_query()
+
 
 def test_fetch_some_id_query2():
     query = """
