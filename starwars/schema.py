@@ -53,10 +53,10 @@ class Query(graphene.ObjectType):
 
     def resolve_human(root, info, id):
         human_data = get_human_data()
-        if int(id) < 1000:
+        if int(id) < 1000 and int(id) > 300:
             return GraphQLError("Invalid ID")
             human = human_data.get(id)
-            if human:
+            if human or human_data:
                 return human
             else:
                 print("ha")
@@ -65,7 +65,7 @@ class Query(graphene.ObjectType):
                 if human_data:
                     return GraphQLError("User does not exist")
             else:
-                if human_data:
+                if not human_data:
                     print(1)
 
     def resolve_droid(root, info, id):

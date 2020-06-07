@@ -57,18 +57,32 @@ class ResolverInstrumentation(ast.NodeTransformer):
     def __branch_dist(comp: ast.Compare, state, K=1):
         if isinstance(comp, ast.Name):
             return "0 if {name} else {K}".format(name=astor.to_source(comp), K=K)
-        left = comp.left
-        right = comp.comparators[0]
-        pred = comp.ops[0]
-        if not state:
-            # * We just have to flip the values
-            left, right = right, left
 
-        if isinstance(pred, ast.Eq):
-            return "abs({left} - {right})".format(left=astor.to_source(left), right=astor.to_source(right))
-        elif isinstance(pred, ast.NotEq):
-            return "-abs({left} - {right})".format(left=astor.to_source(left), right=astor.to_source(right))
-        elif isinstance(pred, ast.Lt) or isinstance(pred, ast.LtE):
-            return "{left} - {right} + {K}".format(left=astor.to_source(left), right=astor.to_source(right), K=K)
-        elif isinstance(pred, ast.Gt) or isinstance(pred, ast.GtE):
-            return "{right} - {left} + {K}".format(left=astor.to_source(left), right=astor.to_source(right), K=K)
+        if isinstance(comp, ast.UnaryOp):
+            operation = comp.op
+            if isinstance(operation, ast.Not):
+                return "0 if not {name} else {K}".format(name=astor.to_source(comp), K=K)
+
+        if isinstance(comp, ast.BoolOp):
+            operation = comp.op
+            if isinstance(operation, ast.And):
+                return "{} + {}".format(ResolverInstrumentation.__branch_dist(comp.values[0], state), ResolverInstrumentation.__branch_dist(comp.values[1], state))
+            elif isinstance(operation, ast.Or):
+                return "min({}, {})".format(ResolverInstrumentation.__branch_dist(comp.values[0], state), ResolverInstrumentation.__branch_dist(comp.values[1], state))
+
+        if isinstance(comp, ast.Compare):
+            left = comp.left
+            right = comp.comparators[0]
+            pred = comp.ops[0]
+            if not state:
+                # * We just have to flip the values
+                left, right = right, left
+
+            if isinstance(pred, ast.Eq):
+                return "abs({left} - {right})".format(left=astor.to_source(left), right=astor.to_source(right))
+            elif isinstance(pred, ast.NotEq):
+                return "-abs({left} - {right})".format(left=astor.to_source(left), right=astor.to_source(right))
+            elif isinstance(pred, ast.Lt) or isinstance(pred, ast.LtE):
+                return "{left} - {right} + {K}".format(left=astor.to_source(left), right=astor.to_source(right), K=K)
+            elif isinstance(pred, ast.Gt) or isinstance(pred, ast.GtE):
+                return "{right} - {left} + {K}".format(left=astor.to_source(left), right=astor.to_source(right), K=K)
