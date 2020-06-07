@@ -120,12 +120,15 @@ class CreateHuman(graphene.Mutation):
 
     def mutate(self, info,sctype, id, name, appears_in):
         # TODO to check for existing ID before mutate
-        if 1000 <= int(id) < 2000:
-            human = Human(sctype, id, name, appears_in, sctype)
-            add_human(human)
-            return CreateHuman(human)
+        if get_human(id) is None:
+            if 1000 <= int(id) < 2000:
+                human = Human(sctype, id, name, appears_in, sctype)
+                add_human(human)
+                return CreateHuman(human)
+            else:
+                return GraphQLError("1000 >= id < 2000 for humans")
         else:
-            return GraphQLError("1000 >= id < 2000 for humans")
+            return GraphQLError("ID already exists")
 
 
 class CreateWizard(graphene.Mutation):
@@ -139,12 +142,15 @@ class CreateWizard(graphene.Mutation):
         sctype = graphene.List(ScType)
 
     def mutate(self, info, id, name, appears_in, signature_spell):
-        if 3000 >= int(id) < 4000:
-            wizard = Wizard(id, name, appears_in, signature_spell)
-            add_wizard(wizard)
-            return CreateWizard(wizard)
+        if get_wizard(id) is None:
+            if 3000 >= int(id) < 4000:
+                wizard = Wizard(id, name, appears_in, signature_spell)
+                add_wizard(wizard)
+                return CreateWizard(wizard)
+            else:
+                return GraphQLError("1000 >= id < 2000 for humans")
         else:
-            return GraphQLError("1000 >= id < 2000 for humans")
+            return GraphQLError("ID already exists")
 
 
 class CreateMuggle(graphene.Mutation):
@@ -157,12 +163,15 @@ class CreateMuggle(graphene.Mutation):
         sctype = graphene.List(ScType)
 
     def mutate(self, info, id, name, appears_in):
-        if 4000 >= int(id) < 5000:
-            muggle = Muggle(id, name, appears_in)
-            add_muggle(muggle)
-            return CreateMuggle(muggle)
+        if get_muggle(id) is None:
+            if 4000 >= int(id) < 5000:
+                muggle = Muggle(id, name, appears_in)
+                add_muggle(muggle)
+                return CreateMuggle(muggle)
+            else:
+                return GraphQLError("1000 >= id < 2000 for humans")
         else:
-            return GraphQLError("1000 >= id < 2000 for humans")
+            return GraphQLError("ID already exists")
 
 
 class Mutation(graphene.ObjectType):
