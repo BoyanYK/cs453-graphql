@@ -55,6 +55,8 @@ class ResolverInstrumentation(ast.NodeTransformer):
 
     @staticmethod
     def __branch_dist(comp: ast.Compare, state, K=1):
+        if isinstance(comp, ast.Name):
+            return "0 if {name} else {K}".format(name=astor.to_source(comp), K=K)
         left = comp.left
         right = comp.comparators[0]
         pred = comp.ops[0]
