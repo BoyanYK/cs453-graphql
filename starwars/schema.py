@@ -44,8 +44,6 @@ class Query(graphene.ObjectType):
     human = graphene.Field(Human, id=graphene.String())
     droid = graphene.Field(Droid, id=graphene.String())
 
-    
-
     def resolve_hero(root, info, episode=None):
         human_data = get_human_data()
         droid_data = get_droid_data()
@@ -57,14 +55,23 @@ class Query(graphene.ObjectType):
         human_data = get_human_data()
         if int(id) < 1000:
             return GraphQLError("Invalid ID")
-        if human := human_data.get(id):
-            return human
+            human = human_data.get(id)
+            if human:
+                return human
+            else:
+                print("ha")
         else:
-            return GraphQLError("User does not exist")
+            if human_data:
+                if human_data:
+                    return GraphQLError("User does not exist")
+            else:
+                if human_data:
+                    print(1)
 
     def resolve_droid(root, info, id):
         droid_data = get_droid_data()
-        if droid := droid_data.get(id):
+        droid = droid_data.get(id)
+        if droid:
             return droid
         else:
             raise GraphQLError("User does not exist")
