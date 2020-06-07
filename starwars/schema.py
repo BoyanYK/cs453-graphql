@@ -1,6 +1,7 @@
 import graphene
+from graphql import GraphQLError
 
-from .data import get_character, get_droid, get_hero, get_human, add_human
+from .data import get_human_data, get_droid_data
 
 class Episode(graphene.Enum):
     NEWHOPE = 4
@@ -16,8 +17,13 @@ class Character(graphene.Interface):
 
     def resolve_friends(self, info):
         # The character friends is a list of strings
+        
         return [get_character(f) for f in self.friends]
 
+    def get_character(f):
+        human_data = get_human_data()
+        droid_data = get_droid_data()
+        return human_data.get(id) or droid_data.get(id)
 
 class Human(graphene.ObjectType):
     class Meta:
@@ -39,14 +45,36 @@ class Query(graphene.ObjectType):
     droid = graphene.Field(Droid, id=graphene.String())
 
     def resolve_hero(root, info, episode=None):
-        return get_hero(episode)
+        human_data = get_human_data()
+        droid_data = get_droid_data()
+        if episode == 5:
+            return human_data["1000"]
+        return droid_data["2001"]
 
     def resolve_human(root, info, id):
-        info.context['trace'] += [1,2,3]
-        return get_human(id)
+        human_data = get_human_data()
+        if int(id) < 1000 and int(id) > 300:
+            return GraphQLError("Invalid ID")
+            human = human_data.get(id)
+            if human or human_data:
+                return human
+            else:
+                print("ha")
+        else:
+            if human_data:
+                if human_data:
+                    return GraphQLError("User does not exist")
+            else:
+                if not human_data:
+                    print(1)
 
     def resolve_droid(root, info, id):
-        return get_droid(id)
+        droid_data = get_droid_data()
+        droid = droid_data.get(id)
+        if droid:
+            return droid
+        else:
+            raise GraphQLError("User does not exist")
 
 
 class CreateHuman(graphene.Mutation):
@@ -58,8 +86,9 @@ class CreateHuman(graphene.Mutation):
         appears_in = graphene.List(Episode)
 
     def mutate(self, info, id, name, appears_in):
+        human_data = get_human_data()
         human = Human(id, name, appears_in)
-        add_human(human)
+        human_data[human.id] = human
         return CreateHuman(human)
 
 

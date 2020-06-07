@@ -104,7 +104,8 @@ def test_fetch_id_query_persistence():
   """
   params = {"someId": "3000"}
   con = {"trace": []}
-  result = schema.execute(query, context=con)
+  result = schema.execute(query, variables=params, context=con)
+  print(result)
   # con is updated here
 
 # * Running these two tests consecutively should result in the first one querying, 

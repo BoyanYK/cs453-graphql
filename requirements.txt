@@ -1,0 +1,10 @@
+aniso8601==7.0.0
+astor==0.8.1
+funcsigs==1.0.2
+graphene==2.1.8
+graphql-core==2.3.2
+graphql-relay==2.0.1
+mock==4.0.2
+promise==2.3
+Rx==1.6.1
+six==1.14.0
