@@ -15,7 +15,8 @@ class ResolverInstrumentation(ast.NodeTransformer):
         # *             string? type_comment)
         if node.name == self.function_name:
             trace = ast.parse("trace = []")
-            context_add = ast.parse("info.context[\"trace_execution\"] = trace")
+            context_add = ast.parse(
+                "info.context[\"trace_execution\"] = trace")
             node.body = [trace, context_add] + node.body
             self.generic_visit(node)
             return node
@@ -28,25 +29,27 @@ class ResolverInstrumentation(ast.NodeTransformer):
         custom_node = Node(node)
         state = self.path.pop(custom_node, None)
         if state != None:
-            branch_distance = ResolverInstrumentation.__branch_dist(node.test, state)
+            branch_distance = ResolverInstrumentation.__branch_dist(
+                node.test, state)
 
-            # TODO Add more logging attributes
-            tracing = ast.parse("trace.append({})".format(branch_distance)).body[0]
+            tracing = ast.parse("trace.append({node}, {test}, {lineno}, {bd})".format(
+                node=node.__class__.__name__, test=astor.to_source(node.test), lineno=node.lineno, bd=branch_distance)).body[0]
             self.generic_visit(node)
             return tracing, node
         else:
             self.generic_visit(node)
             return node
-        
+
     def visit_While(self, node: ast.While):
         # * TypeDef: While(expr test, stmt* body, stmt* orelse)
         custom_node = Node(node)
         state = self.path.pop(custom_node, None)
         if state != None:
-            branch_distance = ResolverInstrumentation.__branch_dist(node.test, state)
+            branch_distance = ResolverInstrumentation.__branch_dist(
+                node.test, state)
 
-            # TODO Add more logging attributes
-            tracing = ast.parse("trace.append({})".format(branch_distance)).body[0]
+            tracing = ast.parse("trace.append({node}, {test}, {lineno}, {bd})".format(
+                node=node.__class__.__name__, test=astor.to_source(node.test), lineno=node.lineno, bd=branch_distance)).body[0]
             self.generic_visit(node)
             return tracing, node
         else:
