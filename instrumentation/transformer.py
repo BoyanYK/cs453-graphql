@@ -1,6 +1,6 @@
 import ast
 import astor
-from execution import Node
+from instrumentation.execution import Node
 
 
 class ResolverInstrumentation(ast.NodeTransformer):

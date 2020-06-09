@@ -1,4 +1,5 @@
 import math
+from instrumentation.execution import run_test
 
 def get_approach_level(node_path, exec_path):
     approach = len(node_path) - 1
@@ -14,10 +15,18 @@ def get_approach_level(node_path, exec_path):
                     break
     return approach, branch_test, branch_distance
 
-def calculate_fitness(path, context_trace):
+def calculate_fitness(schema, inputs, path, context_trace):
     # ? context trace should contain the executed trace, alongside booleans for the branches
     # ? execution trace would be a list of tuples as its easiest to handle without needing to insert complex structures as part of instrumentation
     # Unpack context trace - (expr, test_val, lineno, branch_dist)
+    query = """
+        query FetchSomeIDQuery($someId: String!) {
+            char(id: $someId) {
+                name
+            }
+        }
+    """
+    context_trace = run_test(schema, query, inputs)
     approach, branch_test, branch_distance = get_approach_level(path, context_trace)
     fitness = approach + (1 - math.pow(1.0001, -branch_distance))
-    return fitness, branch_test
+    return fitness, branch_test, approach
