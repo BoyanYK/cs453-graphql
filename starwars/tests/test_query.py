@@ -85,11 +85,11 @@ def test_fetch_id_query_mutate_query():
         }
       }
   """
-    params = {"someId": "1001"}
+    params = {"someId": "1007"}
     mutate = """
   mutation myFirstMutation {
       createHuman(
-          id: 1001,
+          id: 1007,
           name: "Anthony",
           sctype: [SW],
           appearsIn: [NEWHOPE]) {
@@ -126,7 +126,7 @@ def test_fetch_id_query_persistence():
 # * getting no data, then mutating and getting data on the second query
 # * Then, the second test queries for the same data but as its a new instance, it gets no results (no persistence)
 test_fetch_id_query_mutate_query()
-test_fetch_id_query_persistence()
+#test_fetch_id_query_persistence()
 # test_hero_name_query()
 
 
