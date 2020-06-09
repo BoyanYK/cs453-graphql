@@ -135,7 +135,7 @@ class CreateHuman(graphene.Mutation):
 
 
 class CreateWizard(graphene.Mutation):
-    Wizard = graphene.Field(Wizard)
+    wizard = graphene.Field(Wizard)
 
     class Arguments:
         id = graphene.ID()
@@ -160,7 +160,7 @@ class CreateWizard(graphene.Mutation):
 
 
 class CreateMuggle(graphene.Mutation):
-    Muggle = graphene.Field(Muggle)
+    muggle = graphene.Field(Muggle)
 
     class Arguments:
         id = graphene.ID()

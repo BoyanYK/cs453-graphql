@@ -21,6 +21,7 @@ def do_search(schema, targets, args=1, target_func="resolve_char"):
 
 def run(schema_path):
     schema_tree = astor.parse_file(schema_path)
-    targets = get_targets(schema_tree)
+    copy_schema_tree = copy.deepcopy(schema_tree)
+    targets = get_targets(copy_schema_tree)
     do_search(schema_tree, targets)
 
