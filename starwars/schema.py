@@ -1,7 +1,7 @@
 import graphene
 from graphql import GraphQLError
 
-from .data import get_human_data, get_droid_data
+from starwars.data import get_human_data, get_droid_data
 
 class Episode(graphene.Enum):
     NEWHOPE = 4

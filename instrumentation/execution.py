@@ -122,8 +122,7 @@ def wrap_schema(instrumented_tree):
                                                  kw_defaults=[],
                                                  kwarg=None,
                                                  defaults=[]), decorator_list=[], returns=None, type_comment=None)
-    schema_to_ref = ast.parse("object_ref = schema").body[0]
-    wrapper.body = [*instrumented_tree.body, schema_to_ref, ast.parse("return object_ref").body[0]]
+    wrapper.body = [*instrumented_tree.body, ast.parse("return schema").body[0]]
     instrumented_tree.body = [wrapper]
     ast.fix_missing_locations(instrumented_tree)
     return instrumented_tree
@@ -134,5 +133,10 @@ def execute_schema(instrumented_tree):
     exec_tree = wrap_schema(copy_tree)
     exec_schema = compile(exec_tree, filename='schema', mode='exec')
     namespace = {}
+    import sys
+    sys.path.append('/home/cdsnlab/Documents/SPRING 2020/[CS 453] Software Testing/Group Project/cs453-graphql')
+    # print(type(globals()))
     exec(exec_schema, namespace)
     schema = namespace['wrapper_function']()
+    # print(schema)
+    # schema = wrapper_function()
