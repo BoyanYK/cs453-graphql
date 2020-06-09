@@ -14,9 +14,9 @@ class ResolverInstrumentation(ast.NodeTransformer):
         # *             stmt* body, expr* decorator_list, expr? returns,
         # *             string? type_comment)
         if node.name == self.function_name:
-            trace = ast.parse("trace = []")
+            trace = ast.parse("trace = []").body[0]
             context_add = ast.parse(
-                "info.context[\"trace_execution\"] = trace")
+                "info.context[\"trace_execution\"] = trace").body[0]
             node.body = [trace, context_add] + node.body
             self.generic_visit(node)
             return node

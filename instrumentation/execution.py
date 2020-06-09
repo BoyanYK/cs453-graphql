@@ -1,4 +1,5 @@
 import ast
+import copy
 
 class Node(object):
     def __init__(self, node, branch_value=None, parent=None):
@@ -114,4 +115,24 @@ def get_targets(tree, func_name="test_me"):
         targets[node] = path
     return targets
 
-    
+def wrap_schema(instrumented_tree):
+    wrapper = ast.FunctionDef(name='wrapper_function',
+                              args=ast.arguments(posonlyargs=[], args=[], vararg=None,
+                                                 kwonlyargs=[],
+                                                 kw_defaults=[],
+                                                 kwarg=None,
+                                                 defaults=[]), decorator_list=[], returns=None, type_comment=None)
+    schema_to_ref = ast.parse("object_ref = schema").body[0]
+    wrapper.body = [*instrumented_tree.body, schema_to_ref, ast.parse("return object_ref").body[0]]
+    instrumented_tree.body = [wrapper]
+    ast.fix_missing_locations(instrumented_tree)
+    return instrumented_tree
+
+def execute_schema(instrumented_tree):
+    import astor
+    copy_tree = copy.deepcopy(instrumented_tree)
+    exec_tree = wrap_schema(copy_tree)
+    exec_schema = compile(exec_tree, filename='schema', mode='exec')
+    namespace = {}
+    exec(exec_schema, namespace)
+    schema = namespace['wrapper_function']()
