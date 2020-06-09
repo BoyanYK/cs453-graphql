@@ -14,10 +14,9 @@ class ResolverInstrumentation(ast.NodeTransformer):
         # *             stmt* body, expr* decorator_list, expr? returns,
         # *             string? type_comment)
         if node.name == self.function_name:
-            trace = ast.parse("trace = []").body[0]
-            context_add = ast.parse(
-                "info.context[\"trace_execution\"] = trace").body[0]
-            node.body = [trace, context_add] + node.body
+            context_add = ast.parse("info.context[\"trace_execution\"] = []").body[0]
+            
+            node.body = [context_add] + node.body
             self.generic_visit(node)
             return node
         else:
@@ -32,10 +31,12 @@ class ResolverInstrumentation(ast.NodeTransformer):
             branch_distance = ResolverInstrumentation.__branch_dist(
                 node.test, state)
 
-            tracing = ast.parse("trace.append({node}, {test}, {lineno}, {bd})".format(
-                node=node.__class__.__name__, test=astor.to_source(node.test), lineno=node.lineno, bd=branch_distance)).body[0]
+            context_add = ast.parse(
+                "info.context[\"trace_execution\"].append((\"{node}\", {test}, {lineno}, {bd}))".format(
+                node=node.__class__.__name__, test=astor.to_source(node.test), lineno=node.lineno, bd=branch_distance)).body[0] 
+
             self.generic_visit(node)
-            return tracing, node
+            return context_add, node
         else:
             self.generic_visit(node)
             return node
@@ -48,10 +49,12 @@ class ResolverInstrumentation(ast.NodeTransformer):
             branch_distance = ResolverInstrumentation.__branch_dist(
                 node.test, state)
 
-            tracing = ast.parse("trace.append({node}, {test}, {lineno}, {bd})".format(
-                node=node.__class__.__name__, test=astor.to_source(node.test), lineno=node.lineno, bd=branch_distance)).body[0]
+            context_add = ast.parse(
+                "info.context[\"trace_execution\"].append((\"{node}\", {test}, {lineno}, {bd}))".format(
+                node=node.__class__.__name__, test=astor.to_source(node.test), lineno=node.lineno, bd=branch_distance)).body[0] 
+                
             self.generic_visit(node)
-            return tracing, node
+            return context_add, node
         else:
             self.generic_visit(node)
             return node

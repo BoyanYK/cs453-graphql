@@ -4,6 +4,7 @@ from instrumentation.execution import run_test
 def get_approach_level(node_path, exec_path):
     approach = len(node_path) - 1
     branch_test = None
+    branch_distance = 1000
     for executed in exec_path:
         for node in node_path:
             if node.compare(executed):
