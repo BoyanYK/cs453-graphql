@@ -1,5 +1,10 @@
 import ast
-import copy
+import copy, sys
+from graphene.test import Client
+
+from starwars.data import setup as swsetup
+from harrypotter.data import setup as hpsetup
+from starwars.schema import schema as schema
 
 class Node(object):
     def __init__(self, node, branch_value=None, parent=None):
@@ -89,7 +94,7 @@ def get_control_nodes(tree, func_name="test_me"):
             flow_change.append(node)
     return function, flow_change
 
-def get_targets(tree, func_name="test_me"):
+def get_targets(tree, func_name="resolve_char"):
     """[summary]
     Given a (function) tree, get a dictionary of all target branches, along with the path to get there
     The path involves branch conditions for each parent branch
@@ -127,16 +132,24 @@ def wrap_schema(instrumented_tree):
     ast.fix_missing_locations(instrumented_tree)
     return instrumented_tree
 
-def execute_schema(instrumented_tree):
-    import astor
+def executable_schema(instrumented_tree):
     copy_tree = copy.deepcopy(instrumented_tree)
     exec_tree = wrap_schema(copy_tree)
     exec_schema = compile(exec_tree, filename='schema', mode='exec')
     namespace = {}
-    import sys
-    sys.path.append('/home/cdsnlab/Documents/SPRING 2020/[CS 453] Software Testing/Group Project/cs453-graphql')
-    # print(type(globals()))
+    sys.path.append('./')
     exec(exec_schema, namespace)
-    schema = namespace['wrapper_function']()
-    # print(schema)
-    # schema = wrapper_function()
+    return namespace['wrapper_function']()
+
+def run_test(instrumented_schema, query, params):
+    schema = executable_schema(instrumented_schema)
+    swsetup()
+    hpsetup()
+    client = Client(schema)
+    context = {"trace_execution": []}
+    params = {"someId": params[0]}
+    schema.execute(query, context=context, variables=params)
+    exec_path = context["trace_execution"]
+    return exec_path
+
+
