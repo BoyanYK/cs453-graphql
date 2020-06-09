@@ -3,7 +3,7 @@ droid_data = {}
 
 
 def setup():
-    from .schema import Human, Droid
+    from .schema_2 import Human, Droid
 
     global human_data, droid_data
     luke = Human(

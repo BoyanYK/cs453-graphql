@@ -5,7 +5,7 @@ muggle_data = {}
 
 
 def setup():
-    from starwars.schema import Wizard, Muggle
+    from starwars.schema_2 import Wizard, Muggle
     global wizard_data, muggle_data
     harry = Wizard(
         sctype=[2],
