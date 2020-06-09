@@ -1,12 +1,13 @@
 import ast
 import astor
+import copy
 from instrumentation.execution import Node
 
 
 class ResolverInstrumentation(ast.NodeTransformer):
     def __init__(self, target, path, function_name="test_me"):
         self.target = target
-        self.path = path
+        self.path = copy.deepcopy(path)
         self.function_name = function_name
 
     def visit_FunctionDef(self, node: ast.FunctionDef):

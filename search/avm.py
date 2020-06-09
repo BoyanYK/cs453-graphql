@@ -22,7 +22,7 @@ class AVM():
         if str(inputs) in self.results:
             return self.results[str(inputs)]
         else:
-            fitness, branch_state, approach_level = calculate_fitness(self.tree, inputs, self.path, self.func_name)
+            fitness, branch_state, approach_level = calculate_fitness(self.tree, inputs, self.path, self.func_name) # TODO Remove last arg
             if approach_level == 0 and branch_state == self.state:
                 self.answer = inputs, (fitness, branch_state, approach_level)
                 # * We raise an exception because its the easiest way to exit out of multiple nested loops without adding a lot of boolean flags
@@ -31,10 +31,10 @@ class AVM():
             return fitness
 
     def satisfied_condition(self, inputs):
-        return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state
+        return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
 
     def search(self, inputs=None):
-        self.avm(self.avm_gs, inputs)
+        return self.avm(self.avm_gs, inputs)
 
     def avm(self, method, inputs=None):
         # * How many retries with new values
@@ -49,10 +49,10 @@ class AVM():
                 except AnswerFound:
                     return self.answer
                 if fitness <= 0.0 and self.satisfied_condition(inputs):
-                    return inputs, calculate_fitness(self.tree, inputs, self.path, self.func_name)
+                    return inputs, calculate_fitness(self.tree, inputs, self.path, self.func_name) # TODO Remove last arg
                 inputs[i] = value
             if self.satisfied_condition(inputs):
-                return inputs, calculate_fitness(self.tree, inputs, self.path, self.func_name)
+                return inputs, calculate_fitness(self.tree, inputs, self.path, self.func_name) # TODO Remove last arg
             inputs = None
             self.range *= 10
         return "Unable to find solution", inputs

@@ -83,15 +83,15 @@ class Query(graphene.ObjectType):
             return harrypotter.data.get_hero(episode)
 
     def resolve_char(root, info, id):
-        if int(id) < 1000:
+        if int(id) > 0 and int(id) < 1000:
             return GraphQLError("Invalid ID")
-        elif int(id) < 2000:
+        elif int(id) > 1000 and int(id) < 2000:
             return get_human(id)
         elif int(id) < 3000:
             return get_droid(id)
         elif int(id) < 4000:
             return get_wizard(id)
-        elif int(id) < 5000:
+        elif int(id) < 5000 or int(id) > 1000000:
             return get_muggle(id)
         else:
             return GraphQLError("User does not exist")

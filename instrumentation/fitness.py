@@ -8,12 +8,13 @@ def get_approach_level(node_path, exec_path):
     for executed in exec_path:
         for node in node_path:
             if node.compare(executed):
-                current_approach = len(node_path) - exec_path.index(node_path) - 1
+                current_approach = len(node_path) - list(node_path.keys()).index(node) - 1
                 if current_approach < approach or current_approach == 0:
                     approach = current_approach
                     branch_test = executed[1]
                     branch_distance = executed[3]
                     break
+
     return approach, branch_test, branch_distance
 
 def calculate_fitness(schema, inputs, path, context_trace):

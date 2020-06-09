@@ -6,6 +6,8 @@ from starwars.data import setup as swsetup
 from harrypotter.data import setup as hpsetup
 from starwars.schema import schema as schema
 
+from search.utils import blockPrint, enablePrint
+
 class Node(object):
     def __init__(self, node, branch_value=None, parent=None):
         self.name = node.__class__.__name__
@@ -38,7 +40,7 @@ class Node(object):
         return self.__str__()
 
     def compare(self, target):
-        return self.name == target[0] and self.lineno == target[3]
+        return self.name == target[0] and self.lineno == target[2]
 
     def __eq__(self, target):
         return isinstance(target, Node) and self.name == target.name and self.lineno == target.lineno
@@ -135,7 +137,7 @@ def wrap_schema(instrumented_tree):
 def executable_schema(instrumented_tree):
     copy_tree = copy.deepcopy(instrumented_tree)
     exec_tree = wrap_schema(copy_tree)
-    exec_schema = compile(exec_tree, filename='schema', mode='exec')
+    exec_schema = compile(exec_tree, filename='schema_2', mode='exec')
     namespace = {}
     sys.path.append('./')
     exec(exec_schema, namespace)
@@ -147,8 +149,12 @@ def run_test(instrumented_schema, query, params):
     hpsetup()
     client = Client(schema)
     context = {"trace_execution": []}
-    params = {"someId": params[0]}
-    schema.execute(query, context=context, variables=params)
+    params = {"someId": str(params[0])}
+
+    blockPrint()
+    client.execute(query, context=context, variables=params)
+    enablePrint()
+
     exec_path = context["trace_execution"]
     return exec_path
 
