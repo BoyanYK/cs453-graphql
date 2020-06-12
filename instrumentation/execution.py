@@ -9,7 +9,18 @@ from starwars.schema import schema as schema
 from search.utils import blockPrint, enablePrint
 
 class Node(object):
+    """
+    This is a custom object that serves as a helper container when building up the AST
+    in a custom form.
+    """
     def __init__(self, node, branch_value=None, parent=None):
+        """Basic constructor
+
+        Args:
+            node (ast.Node): Python AST Node that we are creating a wrapper for
+            branch_value (bool, optional): The branch value of the parent node. Helps with finding the tree path to this node. Defaults to None.
+            parent (ast.Node, optional): Parent node. Defaults to None.
+        """
         self.name = node.__class__.__name__
         self.parent = parent
         self.depth = 0 if not self.parent else self.parent.depth +  1
@@ -19,27 +30,50 @@ class Node(object):
         self.children = []
 
     def __str__(self):
-        return "{} @ Line {}, parent branch val {}".format(self.name, self.lineno, self.branch_value)
+        return "{} @ Line {}".format(self.name, self.lineno, self.branch_value)
 
     def get_body(self):
+        """
+        This function is used to return the children on the true branch of a node , if it has any.
+        Returns:
+            list: [True] Children nodes, if any
+        """
         try:
             return self.node.body
         except Exception:
             return []
 
     def get_else(self):
+        """[summary]
+        This function is used to return the children on the false branch of a node , if it has any.
+        Returns:
+            list: [False] Children nodes, if any
+        """
         try:
             return self.node.orelse
         except Exception:
             return []
 
     def add_child(self, child):
+        """[summary]
+        Add child object to this node. Not really used.
+        Args:
+            child (ast.Node): Child to append to children list
+        """
         self.children.append(child)
 
     def __repr__(self):
         return self.__str__()
 
     def compare(self, target):
+        """[summary]
+        Functions is used to compare whether a part of the executed trace corresponds to a Node object from the expected path.
+        Args:
+            target (Path tuple object): Tuple representing part/node of the executed path
+
+        Returns:
+            bool: Whether or node it is the same expression
+        """
         return self.name == target[0] and self.lineno == target[2]
 
     def __eq__(self, target):
@@ -72,12 +106,15 @@ def get_control_nodes(tree, func_name="test_me"):
             tree_nodes += stmt.body
         except AttributeError:
             pass
-        
+    
+    # * Create Queue for BFS-style iteration
     queue = []
     queue.append(function)
+    # * List to store nodes that impact the flow of the program
     flow_change = []
     while queue:
         node = queue.pop(0)
+        # * Add True branch children nodes
         for child in node.get_body():
             branch_value = None
             if isinstance(node.node, ast.If) or isinstance(node.node, ast.While):
@@ -86,12 +123,14 @@ def get_control_nodes(tree, func_name="test_me"):
             queue.append(child_node)
             node.add_child(child_node)
 
+        # * Add False branch children nodes
         if isinstance(node.node, ast.If) or isinstance(node.node, ast.While) or isinstance(node.node, ast.For):
             for child in node.get_else():
                 child_node = Node(child, branch_value=False, parent=node)
                 queue.append(child_node)
                 node.add_child(child_node)
 
+        # * Add If and While nodes to flow change list
         if isinstance(node.node, ast.If) or isinstance(node.node, ast.While):
             flow_change.append(node)
     return function, flow_change
@@ -123,6 +162,15 @@ def get_targets(tree, func_name="resolve_char"):
     return targets
 
 def wrap_schema(instrumented_tree):
+    """[summary]
+    This function takes the branch-distance instrumented schema and wraps it around another function such that we can 
+    return the schema object instance as python object to run 
+    Args:
+        instrumented_tree (ast.Module): AST of schema file with modifications for branch distance already done
+
+    Returns:
+        ast.Module: AST that upon execution would return the schema as a python executable object
+    """
     wrapper = ast.FunctionDef(name='wrapper_function',
                               args=ast.arguments(posonlyargs=[], args=[], vararg=None,
                                                  kwonlyargs=[],
@@ -135,6 +183,14 @@ def wrap_schema(instrumented_tree):
     return instrumented_tree
 
 def executable_schema(instrumented_tree):
+    """[summary]
+    Given an instrumented AST of the schema file, returns the schema as an object to execute (rather than an AST one)
+    Args:
+        instrumented_tree (ast.Module): AST of schema file with modifications for branch distance already done
+
+    Returns:
+        schema: Schema to run queries and mutations against
+    """
     copy_tree = copy.deepcopy(instrumented_tree)
     exec_tree = wrap_schema(copy_tree)
     exec_schema = compile(exec_tree, filename='schema_2', mode='exec')
@@ -144,6 +200,16 @@ def executable_schema(instrumented_tree):
     return namespace['wrapper_function']()
 
 def run_test(instrumented_schema, query, params):
+    """[summary]
+
+    Args:
+        instrumented_schema (ast.Module): The AST form of the instrumented schema.py file
+        query (string): GraphQL query string for target function
+        params (list): List of arguments to be passed to the query
+
+    Returns:
+        list(tuple): List of tuples representing the executed path/trace. Format is (expr, test_val, lineno, branch_dist)
+    """
     schema = executable_schema(instrumented_schema)
     swsetup()
     hpsetup()
