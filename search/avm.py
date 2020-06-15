@@ -17,11 +17,29 @@ class AVM():
         self.iterations = 0
         self.func_name = func_name
 
-    def get_f(self, inputs, index, value):
+    def get_f(self, inputs: list, index: int, value):
+        """[summary]
+        Function to handle fitness calculation and end condition satisfaction
+        Args:
+            inputs (list): The list of inputs we want to test
+            index (int): The index within the list of inputs that we want to change (because of AVM)
+            value ([type]): The value that we want to try out in the list of inputs
+
+        Raises:
+            AnswerFound: Exception serving as a quick way to exit execution when an answer has been found
+
+        Returns:
+            float: Fitness value
+        """
+        # * Substitute the index position of the inputs list with the new value we want to try
         inputs[index] = value
+        # * If it has already been encountered (within the dict of results), return the value from there
         if str(inputs) in self.results:
             return self.results[str(inputs)]
         else:
+            # * Calculate fitness given these arguments and if we have the correct state and approach level, raise an Exception to stop execution
+            # * due to correct answer found
+            # * Else, add result to caching table and return fitness
             fitness, branch_state, approach_level = calculate_fitness(self.tree, inputs, self.path, self.func_name) # TODO Remove last arg
             if approach_level == 0 and branch_state == self.state:
                 self.answer = inputs, (fitness, branch_state, approach_level)
@@ -30,10 +48,26 @@ class AVM():
             self.results[str(inputs)] = fitness
             return fitness
 
-    def satisfied_condition(self, inputs):
+    def satisfied_condition(self, inputs: list):
+        """[summary]
+        Verifies if a list of inputs satisfies the targed condition
+        Args:
+            inputs (list): Inputs to try
+
+        Returns:
+            bool: Whether condition has been satisfied or not
+        """
         return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
 
     def search(self, inputs=None):
+        """[summary]
+
+        Args:
+            inputs (list, optional): List of pre-generated starting inputs. Used in case of re-using previous successful inputs. Defaults to None.
+
+        Returns:
+            tuple: Results found
+        """
         return self.avm(self.avm_gs, inputs)
 
     def avm(self, method, inputs=None):
@@ -54,10 +88,12 @@ class AVM():
             if self.satisfied_condition(inputs):
                 return inputs, calculate_fitness(self.tree, inputs, self.path, self.func_name) # TODO Remove last arg
             inputs = None
+            # * Increase initialisation range tenfold
             self.range *= 10
         return "Unable to find solution", inputs
 
     def avm_gs(self, inputs, index):
+        # * Just a basic implementation of AVM Geometric Search
         x = inputs[index]
         fitness = self.get_f(inputs, index, x)
         if self.get_f(inputs, index, x - 1) >= fitness and self.get_f(inputs, index, x + 1) >= fitness:

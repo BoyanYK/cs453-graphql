@@ -161,7 +161,7 @@ def get_targets(tree, func_name="resolve_char"):
         targets[node] = path
     return targets
 
-def wrap_schema(instrumented_tree):
+def wrap_schema(instrumented_tree: ast.Module):
     """[summary]
     This function takes the branch-distance instrumented schema and wraps it around another function such that we can 
     return the schema object instance as python object to run 
@@ -182,7 +182,7 @@ def wrap_schema(instrumented_tree):
     ast.fix_missing_locations(instrumented_tree)
     return instrumented_tree
 
-def executable_schema(instrumented_tree):
+def executable_schema(instrumented_tree: ast.Module):
     """[summary]
     Given an instrumented AST of the schema file, returns the schema as an object to execute (rather than an AST one)
     Args:
@@ -199,7 +199,7 @@ def executable_schema(instrumented_tree):
     exec(exec_schema, namespace)
     return namespace['wrapper_function']()
 
-def run_test(instrumented_schema, query, params):
+def run_test(instrumented_schema: ast.Module, query: str, params: list):
     """[summary]
 
     Args:
