@@ -141,13 +141,14 @@ def get_targets(tree, func_name="resolve_char"):
     The path involves branch conditions for each parent branch
     Args:
         tree (ast.Module): Tree that is to be traversed
-        func_name (str, optional): Function (name) to look for. Defaults to "test_me".
+        func_name (str, optional): Function (name) to look for. Defaults to "resolve_char".
 
     Returns:
         dict: Target branches + execution path for each
     """
-    root, flow_change  = get_control_nodes(tree, func_name)
+    root, flow_change = get_control_nodes(tree, func_name)
     targets = {}
+
     for node in flow_change:
         node_tree = [node]
         path = {}
