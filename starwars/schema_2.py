@@ -119,7 +119,6 @@ class CreateHuman(graphene.Mutation):
         appears_in = graphene.List(Episode)
 
     def mutate(self, info,sctype, id, name, appears_in):
-        # TODO to check for existing ID before mutate
         if get_human(id) is None:
             if int(id) >= 1000:
                 if int(id) < 2000:
