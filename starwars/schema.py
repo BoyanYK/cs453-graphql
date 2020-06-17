@@ -18,7 +18,7 @@ class Character(graphene.Interface):
     def resolve_friends(self, info):
         # The character friends is a list of strings
         
-        return [get_character(f) for f in self.friends]
+        return [self.get_character(f) for f in self.friends]
 
     def get_character(f):
         human_data = get_human_data()
