@@ -59,16 +59,20 @@ class AVM():
         """
         return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
 
-    def search(self, inputs=None):
+    def search(self, method="avm_ips", inputs=None):
         """[summary]
 
         Args:
+            method (str, optional): Which AVM method to use. Options are 'avm_ips' and 'avm_gs'
             inputs (list, optional): List of pre-generated starting inputs. Used in case of re-using previous successful inputs. Defaults to None.
 
         Returns:
             tuple: Results found
         """
-        return self.avm(self.avm_gs, inputs)
+        if method == "avm_ips":
+            return self.avm(self.avm_ips, inputs)
+        elif method == "avm_gs":
+            return self.avm(self.avm_gs, inputs)
 
     def avm(self, method, inputs=None):
         # * How many retries with new values
