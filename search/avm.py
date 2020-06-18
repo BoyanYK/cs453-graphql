@@ -114,3 +114,19 @@ class AVM():
                 l = floor((l + r) / 2) + 1
         x = l
         return x, fitness
+
+        def avm_ips(self, inputs, index):
+            # * Implementation of AVM Iterated Pattern Search
+            x = inputs[index]
+            fitness = self.get_f(inputs, index, x)
+            while fitness > 0:
+                if self.get_f(inputs, index, x - 1) >= fitness and self.get_f(inputs, index, x + 1) >= fitness:
+                    return x, fitness
+                k = -1 if self.get_f(inputs, index, x - 1) < self.get_f(inputs, index, x + 1) else 1
+                while self.get_f(inputs, index, x + k) < self.get_f(inputs, index, x):
+                    if fitness < 0:
+                        break
+                    fitness = self.get_f(inputs, index, x + k)
+                    x = x + k
+                    k = 2 * k
+            return x, fitness
