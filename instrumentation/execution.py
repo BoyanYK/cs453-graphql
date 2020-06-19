@@ -178,6 +178,8 @@ def wrap_schema(instrumented_tree: ast.Module):
                                                  kw_defaults=[],
                                                  kwarg=None,
                                                  defaults=[]), decorator_list=[], returns=None, type_comment=None)
+
+    # We know that the name is "schema"
     wrapper.body = [*instrumented_tree.body, ast.parse("return schema").body[0]]
     instrumented_tree.body = [wrapper]
     ast.fix_missing_locations(instrumented_tree)
