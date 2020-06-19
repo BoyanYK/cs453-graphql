@@ -23,14 +23,14 @@ class Node(object):
         """
         self.name = node.__class__.__name__
         self.parent = parent
-        self.depth = 0 if not self.parent else self.parent.depth +  1
+        self.depth = 0 if not self.parent else self.parent.depth + 1
         self.lineno = node.lineno
         self.node = node
         self.branch_value = branch_value
         self.children = []
 
     def __str__(self):
-        return "{} @ Line {}".format(self.name, self.lineno, self.branch_value)
+        return "{} @ Line {} {}".format(self.name, self.lineno, self.branch_value)
 
     def get_body(self):
         """
@@ -135,7 +135,7 @@ def get_control_nodes(tree, func_name="test_me"):
             flow_change.append(node)
     return function, flow_change
 
-def get_targets(tree, func_name="resolve_char"):
+def get_targets(tree : ast.Module, func_name="resolve_char"):
     """[summary]
     Given a (function) tree, get a dictionary of all target branches, along with the path to get there
     The path involves branch conditions for each parent branch
@@ -178,6 +178,8 @@ def wrap_schema(instrumented_tree: ast.Module):
                                                  kw_defaults=[],
                                                  kwarg=None,
                                                  defaults=[]), decorator_list=[], returns=None, type_comment=None)
+
+    # We know that the name is "schema"
     wrapper.body = [*instrumented_tree.body, ast.parse("return schema").body[0]]
     instrumented_tree.body = [wrapper]
     ast.fix_missing_locations(instrumented_tree)
