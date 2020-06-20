@@ -22,6 +22,7 @@ def generate_queries(sdl_path, depth_limit):
     
     return query_dictionary    
 
+#example usage
 query_dict = generate_queries("./../starwars/schema.graphql", 100)
 
 for key in query_dict.keys():
