@@ -136,10 +136,13 @@ class AVM():
             if fitness < 0:
                 break
 
+            #if input is not negative, sample new y from range(0,input)
             if x > 0:
                 y = np.random.randint(0, x)
+            #elif input is negative, sample new y from range(-input,input)
             elif x < 0:
                 y = np.random.randint(x, abs(x))
+            #elif input is 0, add 10 and sample new y from range(0, 10)
             elif x == 0:
                 x = x+10
                 y = np.random.randint(0, x)
@@ -149,14 +152,21 @@ class AVM():
             print("FITNESS", fitness, "Y: ", y, " X: ", x, " K: ", k)
             print("FITNESS_y ", fitness_y)
 
+            #if fitness of y is lesser than fitness of x
             if fitness_y < fitness:
+                #BUT if fitness of y is > 1,
+                #we want to escape by giving x a larger value
                 if fitness_y > 1:
                     x = abs(x) *10
+                #else we make x = y, at this point fitness value should be close
+                #to 0 based on observations
                 else:
                     x = y
                     print("IF: ", x)
                     break
             else:
+                #if fitness of y is greater, give x with new value
+                #for resampling
                 x = abs(x) * 10
 
         return x, fitness
