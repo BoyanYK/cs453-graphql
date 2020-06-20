@@ -1,6 +1,6 @@
 import graphene
 
-from harrypotter.data import get_wizard, get_hero, get_muggle, add_wizard, add_muggle
+from examples.harrypotter.data import get_wizard, get_hero, get_muggle, add_wizard, add_muggle
 
 
 class Book(graphene.Enum):

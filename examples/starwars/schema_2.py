@@ -1,10 +1,9 @@
 import graphene
 from graphql import GraphQLError
 
-import harrypotter
-import starwars
-from harrypotter.data import get_wizard, get_muggle, add_wizard, add_muggle
-from starwars.data import get_character, get_droid, get_human, add_human
+from examples.harrypotter.data import get_wizard, get_muggle, add_wizard, add_muggle
+from examples.starwars.data import get_character, get_droid, get_human, add_human
+
 
 
 class ScType(graphene.Enum):
@@ -78,9 +77,9 @@ class Query(graphene.ObjectType):
 
     def resolve_hero(root, info, episode=None, scType=None):
         if scType == ScType.SW:
-            return starwars.data.get_hero(episode)
+            return examples.starwars.data.get_hero(episode)
         elif scType == ScType.HP:
-            return harrypotter.data.get_hero(episode)
+            return examples.harrypotter.data.get_hero(episode)
 
     def resolve_char(root, info, id):
         if int(id) < 1000:

@@ -3,7 +3,7 @@ from search.search import run
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-s', '--schema', default='starwars/schema_2.py', 
+    parser.add_argument('-s', '--schema', default='examples/starwars/schema_2.py',
                         type=str, help='Path to schema definition file')
     args = parser.parse_args()
 
