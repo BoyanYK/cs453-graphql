@@ -1,3 +1,5 @@
+import numpy as np
+
 from instrumentation.fitness import calculate_fitness
 from math import floor, ceil
 import random
@@ -59,7 +61,7 @@ class AVM():
         """
         return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
 
-    def search(self, method="avm_ips", inputs=None):
+    def search(self, method="rs", inputs=None):
         """[summary]
 
         Args:
@@ -73,6 +75,8 @@ class AVM():
             return self.avm(self.avm_ips, inputs)
         elif method == "avm_gs":
             return self.avm(self.avm_gs, inputs)
+        elif method == "rs":
+            return self.avm(self.random_s, inputs)
 
     def avm(self, method, inputs=None):
         # * How many retries with new values
@@ -133,4 +137,55 @@ class AVM():
                 fitness = self.get_f(inputs, index, x + k)
                 x = x + k
                 k = 2 * k
+        return x, fitness
+
+    def random_s(self, inputs, index):
+        # using abs here is cheating...
+        # since we know the range will always be positive
+        x = abs(inputs[index])
+        print("INPUTS x: ", x)  # TONY
+        fitness = self.get_f(inputs, index, x)
+
+        if self.get_f(inputs, index, x - 1) >= fitness and self.get_f(inputs, index, x + 1) >= fitness:
+            return x, fitness
+        k = -1 if self.get_f(inputs, index, x - 1) < self.get_f(inputs, index, x + 1) else 1
+
+        # minimise fitness to 0
+        while self.get_f(inputs, index, x + k) < self.get_f(inputs, index, x):
+            if fitness < 0:
+                break
+
+            # if input is not negative, sample new y from range(0,input)
+            if x > 0:
+                y = np.random.randint(0, x)
+            # elif input is negative, sample new y from range(-input,input)
+            elif x < 0:
+                y = np.random.randint(x, abs(x))
+            # elif input is 0, add 10 and sample new y from range(0, 10)
+            elif x == 0:
+                x = x + 10
+                y = np.random.randint(0, x)
+
+            # check fitness with y, sampled from x
+            fitness_y = self.get_f(inputs, index, y)
+            print("FITNESS", fitness, "Y: ", y, " X: ", x, " K: ", k)
+            print("FITNESS_y ", fitness_y)
+
+            # if fitness of y is lesser than fitness of x
+            if fitness_y < fitness:
+                # BUT if fitness of y is > 1,
+                # we want to escape by giving x a larger value
+                if fitness_y > 1:
+                    x = abs(x) * 10
+                # else we make x = y, at this point fitness value should be close
+                # to 0 based on observations
+                else:
+                    x = y
+                    print("IF: ", x)
+                    break
+            else:
+                # if fitness of y is greater, give x with new value
+                # for resampling
+                x = abs(x) * 10
+
         return x, fitness
