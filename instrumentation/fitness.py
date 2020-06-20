@@ -45,26 +45,11 @@ def calculate_fitness(schema, inputs, path, context_trace, query=""):
     # Unpack context trace - (expr, test_val, lineno, branch_dist)
     
     query = """
-        query char($someId: String){
-    char(id: $someId){
-        sctype
-        id
-        name
-        friends{
-            sctype
-            id
-            name
-            friends{
-                sctype
-                id
+        query FetchSomeIDQuery($someId: String!) {
+            char(id: $someId) {
                 name
-                appearsIn
             }
-            appearsIn
         }
-        appearsIn
-    }
-}
     """
     context_trace = run_test(schema, query, inputs)
     approach, branch_test, branch_distance = get_approach_level(path, context_trace)

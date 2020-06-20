@@ -1,0 +1,3 @@
+[submodule "query-generator/gql-generator"]
+	path = query-generator/gql-generator
+	url = https://github.com/timqian/gql-generator

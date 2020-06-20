@@ -1,6 +1,8 @@
 import argparse
 from search.search import run
 
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-s', '--schema', default='starwars/schema_2.py', 
@@ -9,6 +11,8 @@ def main():
 
     schema_path = args.schema
     run(schema_path)
+
+
 
 
 
