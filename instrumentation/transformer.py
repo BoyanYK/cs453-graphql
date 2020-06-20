@@ -51,12 +51,15 @@ class ResolverInstrumentation(ast.NodeTransformer):
             return node
 
     def visit_While(self, node: ast.While):
-        # * TypeDef: While(expr test, stmt* body, stmt* orelse)
-         # Try to 'pop' node from expected path. If it exists then:
-        # 1. Get a string form expression for calculating the branch distance given a target state (T/F) and the WHILE predicate
-        # 2. To the execution trace, add a tuple consisting of (expr.name, predicate.value, lineno, branch_distance), where expression name
-        # would be WHILE and the predicate value is calculated depending on the variables within it
-        # 3. Put this execution trace update BEFORE the WHILE statement - guarantees its going to be executed (if we get to this branch)
+        """
+        TypeDef: While(expr test, stmt* body, stmt* orelse)
+        Try to 'pop' node from expected path. If it exists then:
+        1. Get a string form expression for calculating the branch distance given a target state (T/F) and the WHILE predicate
+        2. To the execution trace, add a tuple consisting of (expr.name, predicate.value, lineno, branch_distance), where expression name
+        would be WHILE and the predicate value is calculated depending on the variables within it
+        3. Put this execution trace update BEFORE the WHILE statement - guarantees its going to be executed (if we get to this branch)
+        """
+
         custom_node = Node(node)
         state = self.path.pop(custom_node, None)
         if state != None:
@@ -65,8 +68,12 @@ class ResolverInstrumentation(ast.NodeTransformer):
 
             context_add = ast.parse(
                 "info.context[\"trace_execution\"].append((\"{node}\", {test}, {lineno}, {bd}))".format(
-                node=node.__class__.__name__, test=astor.to_source(node.test), lineno=node.lineno, bd=branch_distance)).body[0] 
-                
+                    node=node.__class__.__name__,
+                    test=astor.to_source(node.test),
+                    lineno=node.lineno,
+                    bd=branch_distance)
+            ).body[0]
+
             self.generic_visit(node)
             return context_add, node
         else:
