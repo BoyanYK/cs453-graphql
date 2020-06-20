@@ -1,3 +1,5 @@
+import numpy as np
+
 from instrumentation.fitness import calculate_fitness
 from math import floor, ceil
 import random
@@ -59,7 +61,7 @@ class AVM():
         """
         return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
 
-    def search(self, inputs=None):
+    def search(self, inputs=None, type="avm"):
         """[summary]
 
         Args:
@@ -68,7 +70,10 @@ class AVM():
         Returns:
             tuple: Results found
         """
-        return self.avm(self.avm_gs, inputs)
+        if type == "avm":
+            return self.avm(self.avm_gs, inputs)
+        elif type == "rs":
+            return self.avm(self.random_s, inputs)
 
     def avm(self, method, inputs=None):
         # * How many retries with new values
@@ -76,6 +81,7 @@ class AVM():
             # * If no initializing values, create random inputs in range
             if not inputs:
                 inputs = [random.randint(-self.range, self.range) for i in range(self.arg_count)]
+                print("INPUTS: ", inputs) #TONY
             # * Attempt changing each input
             for i, value in enumerate(inputs):
                 try:
@@ -113,4 +119,40 @@ class AVM():
             else:
                 l = floor((l + r) / 2) + 1
         x = l
+        return x, fitness
+
+    def random_s(self, inputs, index):
+        x = inputs[index]
+        fitness = self.get_f(inputs, index, x)
+
+        if self.get_f(inputs, index, x - 1) >= fitness and self.get_f(inputs, index, x + 1) >= fitness:
+            return x, fitness
+        k = -1 if self.get_f(inputs, index, x - 1) < self.get_f(inputs, index, x + 1) else 1
+
+        #minimise fitness to 0
+        while self.get_f(inputs, index, x + k) < self.get_f(inputs, index, x):
+            if fitness < 0:
+                break
+
+            if x > 0:
+                y = np.random.randint(0, x)
+            else:
+                y = np.random.randint(x, 10)
+
+            #check fitness with y, sampled from x
+            fitness_y = self.get_f(inputs, index, y)
+            print("FITNESS", fitness, "Y: ", y, " X: ", x, " K: ", k)
+            print("FITNESS_y ", fitness_y)
+
+            if fitness_y < fitness:
+                if fitness > 1:
+                    x = abs(x) *10
+                else:
+                    x = y
+                    print("IF: ", x)
+                    break
+            else:
+                print("ELSE")
+                x = abs(x) * 10
+
         return x, fitness

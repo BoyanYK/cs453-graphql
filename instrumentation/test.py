@@ -1,8 +1,8 @@
 import astor
 import ast
 import copy
-from execution import get_targets
-from transformer import ResolverInstrumentation
+from instrumentation.execution import get_targets
+from instrumentation.transformer import ResolverInstrumentation
 tree = astor.parse_file("starwars/schema.py")
 
 target_func = "resolve_human"
@@ -14,4 +14,4 @@ for target, path in targets.items():
         path[target] = state
         instrumentation = ResolverInstrumentation(target, path, target_func)
         modified = instrumentation.visit(tree_copy)
-        # print(astor.to_source(modified))
+        #print(astor.to_source(modified))

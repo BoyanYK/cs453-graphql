@@ -1,6 +1,8 @@
+import ast
+
 import astor
 import copy
-from search import avm
+from search import avm, randomsearch
 from instrumentation.transformer import ResolverInstrumentation
 from instrumentation.execution import get_targets
 
@@ -24,7 +26,10 @@ def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_ch
             instrumented_schema = instrumentation.visit(schema_copy)
 
             avm_search = avm.AVM(instrumented_schema, path, args, state, target_func)
-            result = avm_search.search()
+            result = avm_search.search(type="rs")
+
+            # random_search = randomsearch.RS(instrumented_schema, path, args, state, target_func)
+
 
             results[(target, state)] = result
 
