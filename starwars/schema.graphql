@@ -1,0 +1,98 @@
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Char implements Character {
+  sctype: [ScType]
+  id: ID
+  name: String
+  friends: [Character]
+  appearsIn: [Episode]
+}
+
+interface Character {
+  sctype: [ScType]
+  id: ID
+  name: String
+  friends: [Character]
+  appearsIn: [Episode]
+}
+
+type CreateHuman {
+  human: Human
+}
+
+type CreateMuggle {
+  muggle: Muggle
+}
+
+type CreateWizard {
+  wizard: Wizard
+}
+
+type Droid implements Character {
+  sctype: [ScType]
+  id: ID
+  name: String
+  friends: [Character]
+  appearsIn: [Episode]
+  primaryFunction: String
+}
+
+enum Episode {
+  NEWHOPE
+  EMPIRE
+  JEDI
+  ORDPHNX
+  HBPRNCE
+  DTHLWS
+}
+
+type Human implements Character {
+  sctype: [ScType]
+  id: ID
+  name: String
+  friends: [Character]
+  appearsIn: [Episode]
+  homePlanet: String
+}
+
+type Muggle implements Character {
+  sctype: [ScType]
+  id: ID
+  name: String
+  friends: [Character]
+  appearsIn: [Episode]
+  magicalAbility: Boolean
+}
+
+type Mutation {
+  createHuman(appearsIn: [Episode], id: ID, name: String, sctype: [ScType]): CreateHuman
+  createWizard(appearsIn: [Episode], id: ID, name: String, sctype: [ScType], signatureSpell: String): CreateWizard
+  createMuggle(appearsIn: [Episode], id: ID, name: String, sctype: [ScType]): CreateMuggle
+}
+
+type Query {
+  hero(episode: Episode, scType: ScType): Character
+  human(id: String): Human
+  droid(id: String): Droid
+  wizard(id: String): Wizard
+  muggle(id: String): Muggle
+  char(id: String): Char
+}
+
+enum ScType {
+  HP
+  SW
+}
+
+type Wizard implements Character {
+  sctype: [ScType]
+  id: ID
+  name: String
+  friends: [Character]
+  appearsIn: [Episode]
+  signatureSpell: String
+  primaryHouse: String
+}
