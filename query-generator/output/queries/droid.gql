@@ -1,0 +1,21 @@
+query droid($id: String){
+    droid(id: $id){
+        sctype
+        id
+        name
+        friends{
+            sctype
+            id
+            name
+            friends{
+                sctype
+                id
+                name
+                appearsIn
+            }
+            appearsIn
+        }
+        appearsIn
+        primaryFunction
+    }
+}

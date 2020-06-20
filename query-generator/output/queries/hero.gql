@@ -1,0 +1,20 @@
+query hero($episode: Episode, $scType: ScType){
+    hero(episode: $episode, scType: $scType){
+        sctype
+        id
+        name
+        friends{
+            sctype
+            id
+            name
+            friends{
+                sctype
+                id
+                name
+                appearsIn
+            }
+            appearsIn
+        }
+        appearsIn
+    }
+}

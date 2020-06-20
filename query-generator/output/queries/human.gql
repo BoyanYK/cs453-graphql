@@ -1,0 +1,21 @@
+query human($id: String){
+    human(id: $id){
+        sctype
+        id
+        name
+        friends{
+            sctype
+            id
+            name
+            friends{
+                sctype
+                id
+                name
+                appearsIn
+            }
+            appearsIn
+        }
+        appearsIn
+        homePlanet
+    }
+}
