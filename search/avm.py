@@ -81,7 +81,6 @@ class AVM():
             # * If no initializing values, create random inputs in range
             if not inputs:
                 inputs = [random.randint(-self.range, self.range) for i in range(self.arg_count)]
-                print("INPUTS: ", inputs) #TONY
             # * Attempt changing each input
             for i, value in enumerate(inputs):
                 try:
@@ -122,7 +121,10 @@ class AVM():
         return x, fitness
 
     def random_s(self, inputs, index):
-        x = inputs[index]
+        # using abs here is cheating...
+        #since we know the range will always be positive
+        x = abs(inputs[index])
+        print("INPUTS x: ", x)  # TONY
         fitness = self.get_f(inputs, index, x)
 
         if self.get_f(inputs, index, x - 1) >= fitness and self.get_f(inputs, index, x + 1) >= fitness:
@@ -136,8 +138,11 @@ class AVM():
 
             if x > 0:
                 y = np.random.randint(0, x)
-            else:
-                y = np.random.randint(x, 10)
+            elif x < 0:
+                y = np.random.randint(x, abs(x))
+            elif x == 0:
+                x = x+10
+                y = np.random.randint(0, x)
 
             #check fitness with y, sampled from x
             fitness_y = self.get_f(inputs, index, y)
@@ -145,14 +150,13 @@ class AVM():
             print("FITNESS_y ", fitness_y)
 
             if fitness_y < fitness:
-                if fitness > 1:
+                if fitness_y > 1:
                     x = abs(x) *10
                 else:
                     x = y
                     print("IF: ", x)
                     break
             else:
-                print("ELSE")
                 x = abs(x) * 10
 
         return x, fitness
