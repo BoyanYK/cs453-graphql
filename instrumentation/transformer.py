@@ -28,12 +28,15 @@ class ResolverInstrumentation(ast.NodeTransformer):
             return node
 
     def visit_If(self, node: ast.If):
-        # * TypeDef: If(expr test, stmt* body, stmt* orelse)
-        # Try to 'pop' node from expected path. If it exists then:
-        # 1. Get a string form expression for calculating the branch distance given a target state (T/F) and the IF predicate
-        # 2. To the execution trace, add a tuple consisting of (expr.name, predicate.value, lineno, branch_distance), where expression name
-        # would be IF and the predicate value is calculated depending on the variables within it
-        # 3. Put this execution trace update BEFORE the IF statement - guarantees its going to be executed (if we get to this branch)
+        """
+        TypeDef: If(expr test, stmt* body, stmt* orelse)
+        Try to 'pop' node from expected path. If it exists then:
+        1. Get a string form expression for calculating the branch distance given a target state (T/F) and the IF predicate
+        2. To the execution trace, add a tuple consisting of (expr.name, predicate.value, lineno, branch_distance), where expression name
+        would be IF and the predicate value is calculated depending on the variables within it
+        3. Put this execution trace update BEFORE the IF statement - guarantees its going to be executed (if we get to this branch)
+        """
+
         custom_node = Node(node)
         state = self.path.pop(custom_node, None)
         if state != None:
