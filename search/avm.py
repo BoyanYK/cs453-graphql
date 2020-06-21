@@ -62,7 +62,7 @@ class AVM():
         """
         return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
 
-    def search(self, method="avm_gs", inputs=None):
+    def search(self, method, inputs=None):
         """[summary]
 
         Args:
