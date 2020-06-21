@@ -1,3 +1,5 @@
+import numpy as np
+
 from instrumentation.fitness import calculate_fitness
 from math import floor, ceil
 import random
@@ -60,7 +62,7 @@ class AVM():
         """
         return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
 
-    def search(self, method="avm_ips", inputs=None):
+    def search(self, method, inputs=None):
         """[summary]
 
         Args:
