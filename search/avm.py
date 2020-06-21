@@ -62,7 +62,7 @@ class AVM():
         """
         return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
 
-    def search(self, method="rs", inputs=None):
+    def search(self, method="avm_ips", inputs=None):
         """[summary]
 
         Args:
@@ -76,8 +76,6 @@ class AVM():
             return self.avm(self.avm_ips, inputs)
         elif method == "avm_gs":
             return self.avm(self.avm_gs, inputs)
-        elif method == "rs":
-            return self.avm(self.random_s, inputs)
 
     def avm(self, method, inputs=None):
         # * How many retries with new values
