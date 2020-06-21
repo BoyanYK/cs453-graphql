@@ -27,7 +27,7 @@ def do_search(schema: ast.Module, targets: dict, strategy: str, args=1, target_f
             instrumentation = ResolverInstrumentation(target, path, target_func)
             instrumented_schema = instrumentation.visit(schema_copy)
 
-            if strategy == 'avm_gs' or strategy == 'avm_ips':
+            if 'avm' in strategy:
                 avm_search = avm.AVM(instrumented_schema, path, args, state, target_func)
                 result = avm_search.search(method=strategy)
 
