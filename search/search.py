@@ -7,7 +7,7 @@ from instrumentation.execution import get_targets
 from search import randomsearch
 
 
-def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_char"):
+def do_search(schema: ast.Module, targets: dict, strategy: str, args=1, target_func="resolve_char", ):
     """[summary]
 
     Args:
@@ -15,6 +15,7 @@ def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_ch
         targets (dict): Targets dict of the form {target: path}. Path is another dict of the form {node: state}
         args (int, optional): How many arguments the function takes. Defaults to 1.
         target_func (str, optional): Name of the target function. Defaults to "resolve_char".
+        strategy (str, optional): Search strategy to use, avm or random search. Args: (avm/rs), defaults to avm_gs.
     """
     results = {}
     for target, path in targets.items():
@@ -26,11 +27,13 @@ def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_ch
             instrumentation = ResolverInstrumentation(target, path, target_func)
             instrumented_schema = instrumentation.visit(schema_copy)
 
-            avm_search = avm.AVM(instrumented_schema, path, args, state, target_func)
-            result = avm_search.search()
+            if strategy == 'avm_gs' or strategy == 'avm_ips':
+                avm_search = avm.AVM(instrumented_schema, path, args, state, target_func)
+                result = avm_search.search(method=strategy)
 
-            # rs_search = randomsearch.RS(instrumented_schema, path, args, state, target_func)
-            # result = rs_search.search()
+            elif strategy == 'rs':
+                rs_search = randomsearch.RS(instrumented_schema, path, args, state, target_func)
+                result = rs_search.search()
 
             results[(target, state)] = result
 
@@ -38,7 +41,7 @@ def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_ch
         print("Target {} @ state {} with inputs {}".format(target, state, inputs))
 
 
-def run(schema_path: str):
+def run(schema_path: str, strategy: str):
     """[summary]
     Parse python schema file 
     Generate copy of the AST (just in case)
@@ -46,9 +49,11 @@ def run(schema_path: str):
     Execute search on the tree with the found targets
     Args:
         schema_path (str): Path to python schema file
+        :param schema_path:
+        :param strategy: Search strategy to use
     """
     schema_tree = astor.parse_file(schema_path)
     copy_schema_tree = copy.deepcopy(schema_tree)
     targets = get_targets(copy_schema_tree)
-    do_search(schema_tree, targets)
+    do_search(schema_tree, targets, strategy)
 
