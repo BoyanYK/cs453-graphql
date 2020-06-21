@@ -5,6 +5,7 @@ from search import avm
 from instrumentation.transformer import ResolverInstrumentation
 from instrumentation.execution import get_targets
 
+
 def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_char"):
     """[summary]
 
@@ -31,6 +32,7 @@ def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_ch
 
     for (target, state), (inputs, value) in results.items():
         print("Target {} @ state {} with inputs {}".format(target, state, inputs))
+
 
 def run(schema_path: str):
     """[summary]

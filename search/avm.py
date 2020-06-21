@@ -6,6 +6,7 @@ import random
 import copy
 from .utils import AnswerFound
 
+
 class AVM():
     def __init__(self, tree, path, arg_count, state, func_name="test_me", attempts=10):
         self.results = {}

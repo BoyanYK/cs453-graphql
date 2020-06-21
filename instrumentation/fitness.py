@@ -1,6 +1,7 @@
 import math
 from instrumentation.execution import run_test
 
+
 def get_approach_level(node_path, exec_path):
     """[summary]
     This function iterates through both the expected and execution path and calculates the approach level
@@ -26,6 +27,7 @@ def get_approach_level(node_path, exec_path):
                     break
 
     return approach, branch_test, branch_distance
+
 
 def calculate_fitness(schema, inputs, path, context_trace, query=""):
     """[summary]
