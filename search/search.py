@@ -4,6 +4,7 @@ import copy
 from search import avm
 from instrumentation.transformer import ResolverInstrumentation
 from instrumentation.execution import get_targets
+from search import randomsearch
 
 
 def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_char"):
@@ -25,8 +26,11 @@ def do_search(schema: ast.Module, targets: dict, args=1, target_func="resolve_ch
             instrumentation = ResolverInstrumentation(target, path, target_func)
             instrumented_schema = instrumentation.visit(schema_copy)
 
-            avm_search = avm.AVM(instrumented_schema, path, args, state, target_func)
-            result = avm_search.search()
+            # avm_search = avm.AVM(instrumented_schema, path, args, state, target_func)
+            # result = avm_search.search()
+
+            rs_search = randomsearch.RS(instrumented_schema, path, args, state, target_func)
+            result = rs_search.search()
 
             results[(target, state)] = result
 
