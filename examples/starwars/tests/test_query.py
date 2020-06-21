@@ -1,8 +1,8 @@
 from graphene.test import Client
 
-from starwars.data import setup as swsetup
-from harrypotter.data import setup as hpsetup
-from starwars.schema import schema as schema
+from examples.starwars.data import setup as swsetup
+from examples.harrypotter.data import setup as hpsetup
+from examples.starwars.schema import schema as schema
 
 
 def test_hero_name_query():

@@ -1,11 +1,9 @@
-from graphql import GraphQLError
-
 wizard_data = {}
 muggle_data = {}
 
 
 def setup():
-    from starwars.schema_2 import Wizard, Muggle
+    from examples.starwars.schema_2 import Wizard, Muggle
     global wizard_data, muggle_data
     harry = Wizard(
         sctype=[2],
