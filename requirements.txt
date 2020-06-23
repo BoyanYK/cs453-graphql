@@ -9,6 +9,7 @@ graphql-relay==2.0.1
 ipython==7.15.0
 ipython-genutils==0.2.0
 jedi==0.17.0
+numpy==1.19.0
 parso==0.7.0
 pexpect==4.8.0
 pickleshare==0.7.5
