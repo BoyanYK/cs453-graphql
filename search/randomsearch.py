@@ -8,7 +8,7 @@ from search.utils import AnswerFound
 
 
 class RS():
-    def __init__(self, tree, path, arg_count, state, func_name="test_me", attempts=10):
+    def __init__(self, tree, path, arg_count, state, func_name, query_str, field_args_dict, attempts=10):
         self.results = {}
         self.tree = tree
         self.path = path
@@ -19,6 +19,8 @@ class RS():
         self.range = 10
         self.iterations = 0
         self.func_name = func_name
+        self.query_str = query_str
+        self.field_args_dict = field_args_dict
 
     def search(self, method="rs", inputs=None):
         """[summary]
@@ -46,11 +48,10 @@ class RS():
                 except AnswerFound:
                     return self.answer
                 if fitness <= 0.0 and AVM.satisfied_condition(self, inputs):
-                    return inputs, calculate_fitness(self.tree, inputs, self.path,
-                                                     self.func_name)  # TODO Remove last arg
+                    return inputs, calculate_fitness(self.tree, inputs, self.path, self.query_str, self.field_args_dict)
                 inputs[i] = value
             if AVM.satisfied_condition(self, inputs):
-                return inputs, calculate_fitness(self.tree, inputs, self.path, self.func_name)  # TODO Remove last arg
+                return inputs, calculate_fitness(self.tree, inputs, self.path, self.query_str, self.field_args_dict)
             inputs = None
             # * Increase initialisation range tenfold
             self.range *= 10

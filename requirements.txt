@@ -9,6 +9,7 @@ graphql-relay==2.0.1
 ipython==7.15.0
 ipython-genutils==0.2.0
 jedi==0.17.0
+numpy==1.19.0
 parso==0.7.0
 pexpect==4.8.0
 pickleshare==0.7.5
@@ -16,6 +17,7 @@ promise==2.3
 prompt-toolkit==3.0.5
 ptyprocess==0.6.0
 Pygments==2.6.1
+py-gql>=0.6.1
 Rx==1.6.1
 six==1.15.0
 traitlets==4.3.3

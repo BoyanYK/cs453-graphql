@@ -1,9 +1,9 @@
 import graphene
 from graphql import GraphQLError
 
+import examples
 from examples.harrypotter.data import get_wizard, get_muggle, add_wizard, add_muggle
 from examples.starwars.data import get_character, get_droid, get_human, add_human
-
 
 
 class ScType(graphene.Enum):
@@ -117,7 +117,7 @@ class CreateHuman(graphene.Mutation):
         name = graphene.String()
         appears_in = graphene.List(Episode)
 
-    def mutate(self, info,sctype, id, name, appears_in):
+    def mutate(self, info, sctype, id, name, appears_in):
         if get_human(id) is None:
             if int(id) >= 1000:
                 if int(id) < 2000:
