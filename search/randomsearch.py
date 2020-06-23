@@ -4,7 +4,7 @@ from instrumentation.fitness import calculate_fitness
 
 import numpy as np
 
-from search.utils import AnswerFound
+from search.utils import AnswerFound, countFunctionCalls
 
 
 class RS():
@@ -70,6 +70,7 @@ class RS():
 
         # minimise fitness to 0
         while AVM.get_f(self, inputs, index, x + k) < AVM.get_f(self, inputs, index, x):
+            countFunctionCalls()
             if fitness < 0:
                 break
 

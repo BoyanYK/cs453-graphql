@@ -11,5 +11,8 @@ def enablePrint():
     sys.stdout = sys.__stdout__
     sys.stdout = sys.__stderr__
 
+def countFunctionCalls():
+    countFunctionCalls.counter += 1
+
 class AnswerFound(Exception):
     pass

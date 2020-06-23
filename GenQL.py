@@ -1,6 +1,7 @@
 import argparse
 from search.search import run
 import timeit
+from search.utils import countFunctionCalls
 
 def main():
     parser = argparse.ArgumentParser()
@@ -17,6 +18,7 @@ def main():
 
     count = 0
     total_time = 0
+    countFunctionCalls.counter = 0
     for i in range(0, profiler):
         try:
             print("Run:", i+1)
@@ -29,6 +31,7 @@ def main():
             print("Current run failed")
             count += 1
     print("\nTotal runs taken:", count, "Total time taken(secs):", total_time, " Average Time Taken(secs):", total_time/count)
+    print("counter:", countFunctionCalls.counter)
 
 
 if __name__ == "__main__":
