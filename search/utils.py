@@ -4,10 +4,12 @@ import os, sys
 # Disable Printing
 def blockPrint():
     sys.stdout = open(os.devnull, 'w')
+    sys.stderr = open(os.devnull, 'w')
 
 # Restore Printing
 def enablePrint():
     sys.stdout = sys.__stdout__
+    sys.stdout = sys.__stderr__
 
 class AnswerFound(Exception):
     pass
