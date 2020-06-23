@@ -11,7 +11,7 @@ The name of the schema variable in the schema path should be `schema`.
     
     pip install -r requirements.txt
 
-###To Run:
+### To Run:
     python GenQL.py
 Args:
 - `-gp, --graphene-schema` default = 'examples/starwars/schema_2.py', Path to a graphene schema definition file.
@@ -20,7 +20,7 @@ Args:
 - `-p, --profiler` default = 1, Number of times to repeat runs.
 
 
-###Group Members:
+### Group Members:
 >[@BoyanYK](https://github.com/BoyanYK)
 >
 >[@devturnip](https://github.com/devturnip)
