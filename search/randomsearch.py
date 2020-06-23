@@ -86,8 +86,6 @@ class RS():
 
             # check fitness with y, sampled from x
             fitness_y = AVM.get_f(self, inputs, index, y)
-            print("FITNESS", fitness, "Y: ", y, " X: ", x, " K: ", k)
-            print("FITNESS_y ", fitness_y)
 
             # if fitness of y is lesser than fitness of x
             if fitness_y < fitness:
@@ -99,7 +97,6 @@ class RS():
                 # to 0 based on observations
                 else:
                     x = y
-                    print("IF: x=y", x, "FITNESS: ", fitness)
 
             else:
                 # if fitness of y is greater, give x with new value
