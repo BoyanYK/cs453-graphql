@@ -1,6 +1,6 @@
 import argparse
 from search.search import run
-
+import timeit
 
 def main():
     parser = argparse.ArgumentParser()
@@ -8,11 +8,27 @@ def main():
                         type=str, help='Path to a graphene schema definition file')
     parser.add_argument('-gql', '--graphql-schema', default='examples/starwars/schema.graphql',
                         type=str, help='Path to a GraphQL schema definition file')
-    parser.add_argument('-st', '--strategy', default='avm_ips',
+    parser.add_argument('-st', '--strategy', default='rs',
                         type=str, help='Search strategy to use. args[avm_ips|avm_gs|rs]')
+    parser.add_argument('-p', '--profiler', default=1)
     args = parser.parse_args()
 
-    run(args.graphene_schema, args.graphql_schema, args.strategy)
+    profiler = args.__dict__['profiler']
+
+    count = 0
+    total_time = 0
+    for i in range(0, profiler):
+        try:
+            print("Run:", i+1)
+            start = timeit.default_timer()
+            run(args.graphene_schema, args.graphql_schema, args.strategy)
+            stop = timeit.default_timer()
+            total_time += (stop-start)
+            count += 1
+        except:
+            print("Current run failed")
+            count += 1
+    print("\nTotal runs taken:", count, "Total time taken(secs):", total_time, " Average Time Taken(secs):", total_time/count)
 
 
 if __name__ == "__main__":
