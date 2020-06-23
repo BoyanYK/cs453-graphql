@@ -9,9 +9,10 @@ def main():
                         type=str, help='Path to a graphene schema definition file')
     parser.add_argument('-gql', '--graphql-schema', default='examples/starwars/schema.graphql',
                         type=str, help='Path to a GraphQL schema definition file')
-    parser.add_argument('-st', '--strategy', default='rs',
+    parser.add_argument('-st', '--strategy', default='avm_ips',
                         type=str, help='Search strategy to use. args[avm_ips|avm_gs|rs]')
-    parser.add_argument('-p', '--profiler', default=1)
+    parser.add_argument('-p', '--profiler', default=1,
+                        type=int, help='number of times to repeat runs. default is 1.')
     args = parser.parse_args()
 
     profiler = args.__dict__['profiler']
@@ -30,8 +31,8 @@ def main():
         except:
             print("Current run failed")
             count += 1
-    print("\nTotal runs taken:", count, "Total time taken(secs):", total_time, " Average Time Taken(secs):", total_time/count)
-    print("counter:", countFunctionCalls.counter)
+    print("\nTotal runs taken:", count, "| Total time taken(secs):", total_time, "| Average Time Taken(secs):", total_time/count)
+    print("Total loops:", countFunctionCalls.counter, "| Average loops:", countFunctionCalls.counter/count)
 
 
 if __name__ == "__main__":
