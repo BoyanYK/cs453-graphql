@@ -1,13 +1,15 @@
 import ast
 import astor
 import copy
+
+from generator.query_gen import get_query_dict
 from search import avm
 from instrumentation.transformer import ResolverInstrumentation
 from instrumentation.execution import get_targets
 from search import randomsearch
 
 
-def do_search(schema: ast.Module, targets: dict, strategy: str, args=1, target_func="resolve_char", ):
+def do_search(schema: ast.Module, targets: dict, strategy: str, target_func="resolve_char", query_str:str = "", args=1):
     """[summary]
 
     Args:
@@ -41,19 +43,21 @@ def do_search(schema: ast.Module, targets: dict, strategy: str, args=1, target_f
         print("Target {} @ state {} with inputs {}".format(target, state, inputs))
 
 
-def run(schema_path: str, strategy: str):
+def run(graphene_schema_path: str, graphql_schema_path: str, strategy: str):
     """[summary]
     Parse python schema file 
     Generate copy of the AST (just in case)
     Find all branches within the tree
     Execute search on the tree with the found targets
     Args:
-        schema_path (str): Path to python schema file
-        :param schema_path:
+        :param graphene_schema (str): Path to graphene schema file
+        :param graphql_schema_path: Path to graphql schema file
         :param strategy: Search strategy to use
     """
-    schema_tree = astor.parse_file(schema_path)
-    copy_schema_tree = copy.deepcopy(schema_tree)
-    targets = get_targets(copy_schema_tree)
-    do_search(schema_tree, targets, strategy)
+    schema_tree = astor.parse_file(graphene_schema_path)
+    query_dict = get_query_dict(graphql_schema_path)
+
+    for func_name, query_str in query_dict.items():
+        targets = get_targets(copy.deepcopy(schema_tree), func_name)
+        do_search(copy.deepcopy(schema_tree), targets, strategy, func_name, query_str)
 

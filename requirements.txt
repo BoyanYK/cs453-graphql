@@ -17,6 +17,7 @@ promise==2.3
 prompt-toolkit==3.0.5
 ptyprocess==0.6.0
 Pygments==2.6.1
+py-gql>=0.6.1
 Rx==1.6.1
 six==1.15.0
 traitlets==4.3.3
