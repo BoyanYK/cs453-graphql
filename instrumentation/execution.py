@@ -96,6 +96,8 @@ def get_control_nodes(tree, func_name="test_me"):
     """
     # * We first search for the target function within all nodes of the file
     # * And save it as an initial node
+
+    function = None
     tree_nodes = tree.body
     for stmt in tree_nodes:
         if isinstance(stmt, ast.FunctionDef) and stmt.name == func_name:
@@ -108,7 +110,8 @@ def get_control_nodes(tree, func_name="test_me"):
     
     # * Create Queue for BFS-style iteration
     queue = []
-    queue.append(function)
+    if function:
+        queue.append(function)
     # * List to store nodes that impact the flow of the program
     flow_change = []
     while queue:
