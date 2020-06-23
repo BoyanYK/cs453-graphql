@@ -8,7 +8,7 @@ from .utils import AnswerFound
 
 
 class AVM():
-    def __init__(self, tree, path, arg_count, state, func_name="test_me", attempts=10):
+    def __init__(self, tree, path, arg_count, state, func_name, query_str, field_args_dict, attempts=10):
         self.results = {}
         self.tree = tree
         self.path = path
@@ -19,6 +19,8 @@ class AVM():
         self.range = 10
         self.iterations = 0
         self.func_name = func_name
+        self.query_str = query_str
+        self.field_args_dict = field_args_dict
 
     def get_f(self, inputs: list, index: int, value):
         """[summary]
@@ -43,7 +45,7 @@ class AVM():
             # * Calculate fitness given these arguments and if we have the correct state and approach level, raise an Exception to stop execution
             # * due to correct answer found
             # * Else, add result to caching table and return fitness
-            fitness, branch_state, approach_level = calculate_fitness(self.tree, inputs, self.path, self.func_name) # TODO Remove last arg
+            fitness, branch_state, approach_level = calculate_fitness(self.tree, inputs, self.path, self.query_str, self.field_args_dict)
             if approach_level == 0 and branch_state == self.state:
                 self.answer = inputs, (fitness, branch_state, approach_level)
                 # * We raise an exception because its the easiest way to exit out of multiple nested loops without adding a lot of boolean flags
@@ -60,7 +62,7 @@ class AVM():
         Returns:
             bool: Whether condition has been satisfied or not
         """
-        return calculate_fitness(self.tree, inputs, self.path, self.func_name)[1] == self.state # TODO Remove last arg
+        return calculate_fitness(self.tree, inputs, self.path, self.query_str, self.field_args_dict)[1] == self.state
 
     def search(self, method, inputs=None):
         """[summary]
@@ -90,10 +92,10 @@ class AVM():
                 except AnswerFound:
                     return self.answer
                 if fitness <= 0.0 and self.satisfied_condition(inputs):
-                    return inputs, calculate_fitness(self.tree, inputs, self.path, self.func_name) # TODO Remove last arg
+                    return inputs, calculate_fitness(self.tree, inputs, self.path, self.query_str, self.field_args_dict)
                 inputs[i] = value
             if self.satisfied_condition(inputs):
-                return inputs, calculate_fitness(self.tree, inputs, self.path, self.func_name) # TODO Remove last arg
+                return inputs, calculate_fitness(self.tree, inputs, self.path, self.query_str, self.field_args_dict)
             inputs = None
             # * Increase initialisation range tenfold
             self.range *= 10

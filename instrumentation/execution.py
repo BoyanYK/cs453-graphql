@@ -29,7 +29,15 @@ class Node(object):
         self.children = []
 
     def __str__(self):
-        return "{} @ Line {} {}".format(self.name, self.lineno, self.branch_value)
+        def get_branch_value(branch_value):
+            """
+            If `branch_value` is None, it should be regarded as True branch since it'ss the outermost one
+            """
+            if branch_value is True or branch_value is None:
+                return True
+            return False
+
+        return "{} @ Line {} {}".format(self.name, self.lineno, get_branch_value(self.branch_value))
 
     def get_body(self):
         """
@@ -137,7 +145,7 @@ def get_control_nodes(tree, func_name="test_me"):
             flow_change.append(node)
     return function, flow_change
 
-def get_targets(tree : ast.Module, func_name="resolve_char"):
+def get_targets(tree : ast.Module, func_name):
     """[summary]
     Given a (function) tree, get a dictionary of all target branches, along with the path to get there
     The path involves branch conditions for each parent branch
@@ -204,7 +212,7 @@ def executable_schema(instrumented_tree: ast.Module):
     exec(exec_schema, namespace)
     return namespace['wrapper_function']()
 
-def run_test(instrumented_schema: ast.Module, query: str, params: list):
+def run_test(instrumented_schema: ast.Module, query: str, params: list, field_args_dict : dict):
     """[summary]
 
     Args:
@@ -220,10 +228,13 @@ def run_test(instrumented_schema: ast.Module, query: str, params: list):
     hpsetup()
     client = Client(schema)
     context = {"trace_execution": []}
-    params = {"someId": str(params[0])}
+
+    variables = {}
+    for i, param_name in enumerate(field_args_dict):
+        variables[param_name] = params[i]
 
     blockPrint()
-    client.execute(query, context=context, variables=params)
+    client.execute(query, context=context, variables=variables)
     enablePrint()
 
     exec_path = context["trace_execution"]

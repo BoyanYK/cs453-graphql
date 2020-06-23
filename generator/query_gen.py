@@ -71,6 +71,8 @@ def get_query_dict(sdl_path, depth_limit=100, include_deprecated_fields=True):
         if cross_reference_key_list is None:
             cross_reference_key_list = []
 
+        field_args_dict= None
+
         field = gql_schema.get_type(cur_parent_type).field_map.get(cur_name)
         cur_type_name = field.type.type.name if hasattr(field.type, "type") else field.type.name
         cur_type = gql_schema.get_type(cur_type_name)
@@ -147,7 +149,8 @@ def get_query_dict(sdl_path, depth_limit=100, include_deprecated_fields=True):
 
         return {
             'query_str': query_str,
-            'arguments_dict': arguments_dict
+            'arguments_dict': arguments_dict,
+            'field_args_dict': field_args_dict
         }
 
     with open(sdl_path) as v:
@@ -174,6 +177,9 @@ def get_query_dict(sdl_path, depth_limit=100, include_deprecated_fields=True):
             query_result["query_str"]
         )
 
-        query_dict["resolve_{}".format(type.name)] = query
+        query_dict["resolve_{}".format(type.name)] = {
+            'query' : query,
+            'field_args_dict' : query_result["field_args_dict"]
+        }
 
     return query_dict

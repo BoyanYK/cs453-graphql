@@ -29,7 +29,7 @@ def get_approach_level(node_path, exec_path):
     return approach, branch_test, branch_distance
 
 
-def calculate_fitness(schema, inputs, path, context_trace, query=""):
+def calculate_fitness(schema, inputs, path, query, field_args_dict):
     """[summary]
     This function is a helper to simplify the execution of a test and fetching the results
     Args:
@@ -46,14 +46,8 @@ def calculate_fitness(schema, inputs, path, context_trace, query=""):
     # ? execution trace would be a list of tuples as its easiest to handle without needing to insert complex structures as part of instrumentation
     # Unpack context trace - (expr, test_val, lineno, branch_dist)
     
-    query = """
-        query FetchSomeIDQuery($someId: String!) {
-            char(id: $someId) {
-                name
-            }
-        }
-    """
-    context_trace = run_test(schema, query, inputs)
+
+    context_trace = run_test(schema, query, inputs, field_args_dict)
     approach, branch_test, branch_distance = get_approach_level(path, context_trace)
     fitness = approach + (1 - math.pow(1.0001, -branch_distance))
     return fitness, branch_test, approach
