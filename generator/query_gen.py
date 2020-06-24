@@ -5,7 +5,7 @@ import subprocess
 from os import listdir
 from os.path import isfile, join
 
-from generator.util import get_field_args_dict, get_args_to_vars_str, get_vars_to_types_str
+from generator.utils import get_field_args_dict, get_args_to_vars_str, get_vars_to_types_str
 
 def get_query_dict(sdl_path, depth_limit=100, include_deprecated_fields=True):
     """
