@@ -4,7 +4,7 @@ from instrumentation.fitness import calculate_fitness
 from math import floor, ceil
 import random
 import copy
-from .utils import AnswerFound
+from .utils import AnswerFound, countFunctionCalls
 
 
 class AVM():
@@ -109,6 +109,7 @@ class AVM():
             return x, fitness
         k = -1 if self.get_f(inputs, index, x - 1) < self.get_f(inputs, index, x + 1) else 1
         while self.get_f(inputs, index, x + k) < self.get_f(inputs, index, x):
+            countFunctionCalls()
             if fitness < 0:
                 break
             fitness = self.get_f(inputs, index, x + k)
@@ -129,6 +130,7 @@ class AVM():
         x = inputs[index]
         fitness = self.get_f(inputs, index, x)
         while fitness > 0:
+            countFunctionCalls()
             if self.get_f(inputs, index, x - 1) >= fitness and self.get_f(inputs, index, x + 1) >= fitness:
                 return x, fitness
             k = -1 if self.get_f(inputs, index, x - 1) < self.get_f(inputs, index, x + 1) else 1

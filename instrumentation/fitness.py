@@ -41,11 +41,10 @@ def calculate_fitness(schema, inputs, path, query, field_args_dict):
 
     Returns:
         tuple: Tuple containing (fitness_value, branch/predicate value, approach_level)
-    """    
+    """
     # ? context trace should contain the executed trace, alongside booleans for the branches
     # ? execution trace would be a list of tuples as its easiest to handle without needing to insert complex structures as part of instrumentation
     # Unpack context trace - (expr, test_val, lineno, branch_dist)
-    
 
     context_trace = run_test(schema, query, inputs, field_args_dict)
     approach, branch_test, branch_distance = get_approach_level(path, context_trace)
