@@ -92,6 +92,8 @@ class Query(graphene.ObjectType):
             return get_wizard(id)
         elif int(id) > 5000 and int(id) < 1000000:
             return get_muggle(id)
+        # elif int(id) == 6666:
+        #     print("needle in a haystack :)")
         else:
             return GraphQLError("User does not exist")
 

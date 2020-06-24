@@ -20,6 +20,7 @@ def main():
     count = 0
     total_time = 0
     countFunctionCalls.counter = 0
+    temp = 0
     for i in range(0, profiler):
         try:
             print("Run:", i+1)
@@ -31,6 +32,9 @@ def main():
         except:
             print("Current run failed")
             count += 1
+
+        print("ITR_Total loops:", countFunctionCalls.counter-temp, "| ITR_Total time taken(secs):",stop-start)
+        temp = countFunctionCalls.counter
     print("\nTotal runs taken:", count, "| Total time taken(secs):", total_time, "| Average Time Taken(secs):", total_time/count)
     print("Total loops:", countFunctionCalls.counter, "| Average loops:", countFunctionCalls.counter/count)
 

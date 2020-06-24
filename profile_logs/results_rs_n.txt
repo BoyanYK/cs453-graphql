@@ -1,0 +1,1383 @@
+INPUTS x:  1
+INPUTS x:  79
+INPUTS x:  6
+INPUTS x:  99
+INPUTS x:  241
+INPUTS x:  6766
+INPUTS x:  9749
+INPUTS x:  87458
+INPUTS x:  12354
+INPUTS x:  401757
+INPUTS x:  333807
+INPUTS x:  51610
+INPUTS x:  2334615
+INPUTS x:  84266163
+INPUTS x:  77427433
+INPUTS x:  567299589
+INPUTS x:  300327432
+INPUTS x:  9475643651
+INPUTS x:  7407881858
+INPUTS x:  4
+INPUTS x:  3
+INPUTS x:  48
+INPUTS x:  85
+INPUTS x:  542
+INPUTS x:  828
+INPUTS x:  1206
+INPUTS x:  1794
+INPUTS x:  72983
+INPUTS x:  79196
+INPUTS x:  791744
+INPUTS x:  407855
+INPUTS x:  4094083
+INPUTS x:  1603546
+INPUTS x:  42003289
+INPUTS x:  51240622
+INPUTS x:  913640703
+INPUTS x:  98649121
+INPUTS x:  5939698801
+INPUTS x:  3684906453
+INPUTS x:  4
+INPUTS x:  2
+INPUTS x:  96
+INPUTS x:  19
+INPUTS x:  800
+INPUTS x:  273
+INPUTS x:  4768
+INPUTS x:  14
+INPUTS x:  66007
+INPUTS x:  69962
+INPUTS x:  113735
+INPUTS x:  313932
+INPUTS x:  5901193
+INPUTS x:  2688340
+INPUTS x:  20264490
+INPUTS x:  9754497
+INPUTS x:  426945024
+INPUTS x:  441164107
+INPUTS x:  8272849155
+INPUTS x:  5524496203
+INPUTS x:  0
+INPUTS x:  10
+INPUTS x:  89
+INPUTS x:  4
+INPUTS x:  805
+INPUTS x:  254
+INPUTS x:  5228
+INPUTS x:  4094
+INPUTS x:  5098
+INPUTS x:  49812
+INPUTS x:  630978
+INPUTS x:  175720
+INPUTS x:  6076730
+INPUTS x:  8813393
+INPUTS x:  49870156
+INPUTS x:  85664887
+INPUTS x:  284204653
+INPUTS x:  769246577
+INPUTS x:  9328261837
+INPUTS x:  1920709802
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  10
+INPUTS x:  4
+INPUTS x:  9
+INPUTS x:  87
+INPUTS x:  702
+INPUTS x:  7353
+INPUTS x:  2
+INPUTS x:  5
+INPUTS x:  809
+INPUTS x:  7291
+INPUTS x:  2
+INPUTS x:  6
+INPUTS x:  2
+INPUTS x:  19
+INPUTS x:  430
+INPUTS x:  3299
+INPUTS x:  10
+INPUTS x:  8
+INPUTS x:  5
+INPUTS x:  7
+INPUTS x:  49
+INPUTS x:  730
+INPUTS x:  9871
+INPUTS x:  95417
+INPUTS x:  725424
+INPUTS x:  8384015
+INPUTS x:  27530528
+INPUTS x:  819947963
+INPUTS x:  4958295270
+INPUTS x:  10
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1021]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1258]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7291]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2001]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [6001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3299]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [10001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [5000]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4849]
+ITR_Total loops: 8174 | ITR_Total time taken(secs): 214.722338758
+Run: 2
+INPUTS x:  7
+INPUTS x:  8
+INPUTS x:  49
+INPUTS x:  60
+INPUTS x:  786
+INPUTS x:  809
+INPUTS x:  8977
+INPUTS x:  3400
+INPUTS x:  55393
+INPUTS x:  19348
+INPUTS x:  208389
+INPUTS x:  589748
+INPUTS x:  5115202
+INPUTS x:  3914391
+INPUTS x:  33611651
+INPUTS x:  43487814
+INPUTS x:  730672626
+INPUTS x:  860818326
+INPUTS x:  6896616425
+INPUTS x:  82496485
+INPUTS x:  5
+INPUTS x:  7
+INPUTS x:  61
+INPUTS x:  8
+INPUTS x:  358
+INPUTS x:  829
+INPUTS x:  3411
+INPUTS x:  2745
+INPUTS x:  12682
+INPUTS x:  85180
+INPUTS x:  625698
+INPUTS x:  647605
+INPUTS x:  2089201
+INPUTS x:  9367450
+INPUTS x:  46697442
+INPUTS x:  31153480
+INPUTS x:  598392960
+INPUTS x:  442644667
+INPUTS x:  1827525016
+INPUTS x:  407830536
+INPUTS x:  4
+INPUTS x:  2
+INPUTS x:  35
+INPUTS x:  54
+INPUTS x:  129
+INPUTS x:  221
+INPUTS x:  2102
+INPUTS x:  5427
+INPUTS x:  14236
+INPUTS x:  51610
+INPUTS x:  966410
+INPUTS x:  985925
+INPUTS x:  7920911
+INPUTS x:  8919330
+INPUTS x:  23856927
+INPUTS x:  40847413
+INPUTS x:  566617756
+INPUTS x:  701632222
+INPUTS x:  2030557955
+INPUTS x:  3916372837
+INPUTS x:  7
+INPUTS x:  3
+INPUTS x:  87
+INPUTS x:  66
+INPUTS x:  690
+INPUTS x:  646
+INPUTS x:  9845
+INPUTS x:  5057
+INPUTS x:  37429
+INPUTS x:  68547
+INPUTS x:  156072
+INPUTS x:  807046
+INPUTS x:  4936014
+INPUTS x:  1156765
+INPUTS x:  80175058
+INPUTS x:  17219330
+INPUTS x:  802168008
+INPUTS x:  252764450
+INPUTS x:  3518438986
+INPUTS x:  6592633225
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  6
+INPUTS x:  3
+INPUTS x:  5
+INPUTS x:  82
+INPUTS x:  533
+INPUTS x:  3348
+INPUTS x:  29174
+INPUTS x:  10
+INPUTS x:  4
+INPUTS x:  208
+INPUTS x:  8445
+INPUTS x:  10
+INPUTS x:  98
+INPUTS x:  119
+INPUTS x:  3644
+INPUTS x:  2
+INPUTS x:  9
+INPUTS x:  14
+INPUTS x:  204
+INPUTS x:  5092
+INPUTS x:  2478
+INPUTS x:  126229
+INPUTS x:  698367
+INPUTS x:  12936781
+INPUTS x:  902434438
+INPUTS x:  8867950311
+INPUTS x:  0
+INPUTS x:  7
+INPUTS x:  1
+INPUTS x:  61
+INPUTS x:  284
+INPUTS x:  550
+INPUTS x:  62499
+INPUTS x:  77730
+INPUTS x:  6500526
+INPUTS x:  8
+INPUTS x:  51
+INPUTS x:  885
+INPUTS x:  5183
+INPUTS x:  13771
+INPUTS x:  434903
+INPUTS x:  49443
+INPUTS x:  32149921
+INPUTS x:  356477914
+INPUTS x:  529395203
+INPUTS x:  7
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1901]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1714]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8445]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2159]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [20001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [10001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [7001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [6500526]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4409]
+ITR_Total loops: 18139 | ITR_Total time taken(secs): 343.53644608699994
+Run: 3
+INPUTS x:  0
+INPUTS x:  9
+INPUTS x:  50
+INPUTS x:  13
+INPUTS x:  97
+INPUTS x:  883
+INPUTS x:  5758
+INPUTS x:  8598
+INPUTS x:  16191
+INPUTS x:  35114
+INPUTS x:  28456
+INPUTS x:  457063
+INPUTS x:  4450120
+INPUTS x:  1963358
+INPUTS x:  55404289
+INPUTS x:  28650640
+INPUTS x:  159177080
+INPUTS x:  723925045
+INPUTS x:  7715688324
+INPUTS x:  5641491490
+INPUTS x:  8
+INPUTS x:  7
+INPUTS x:  51
+INPUTS x:  62
+INPUTS x:  59
+INPUTS x:  437
+INPUTS x:  3271
+INPUTS x:  9500
+INPUTS x:  57739
+INPUTS x:  70951
+INPUTS x:  6038
+INPUTS x:  423182
+INPUTS x:  679422
+INPUTS x:  4323180
+INPUTS x:  73908383
+INPUTS x:  14680005
+INPUTS x:  330975613
+INPUTS x:  94455472
+INPUTS x:  9930707211
+INPUTS x:  3666786097
+INPUTS x:  9
+INPUTS x:  7
+INPUTS x:  34
+INPUTS x:  37
+INPUTS x:  624
+INPUTS x:  827
+INPUTS x:  5964
+INPUTS x:  7483
+INPUTS x:  32623
+INPUTS x:  13019
+INPUTS x:  439357
+INPUTS x:  26346
+INPUTS x:  9449765
+INPUTS x:  3538069
+INPUTS x:  15269656
+INPUTS x:  81034714
+INPUTS x:  28306655
+INPUTS x:  626658325
+INPUTS x:  1837576901
+INPUTS x:  559520581
+INPUTS x:  0
+INPUTS x:  5
+INPUTS x:  51
+INPUTS x:  64
+INPUTS x:  741
+INPUTS x:  684
+INPUTS x:  1076
+INPUTS x:  7716
+INPUTS x:  24596
+INPUTS x:  14481
+INPUTS x:  319209
+INPUTS x:  656202
+INPUTS x:  2243940
+INPUTS x:  4212413
+INPUTS x:  97774544
+INPUTS x:  27493123
+INPUTS x:  363747795
+INPUTS x:  273272428
+INPUTS x:  2006292521
+INPUTS x:  8714405113
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  6
+INPUTS x:  9
+INPUTS x:  2
+INPUTS x:  83
+INPUTS x:  246
+INPUTS x:  19
+INPUTS x:  8695
+INPUTS x:  429760
+INPUTS x:  8387381
+INPUTS x:  6416869
+INPUTS x:  945827864
+INPUTS x:  4302032313
+INPUTS x:  9
+INPUTS x:  67
+INPUTS x:  176
+INPUTS x:  4073
+INPUTS x:  1
+INPUTS x:  40
+INPUTS x:  24
+INPUTS x:  10
+INPUTS x:  6
+INPUTS x:  32
+INPUTS x:  8
+INPUTS x:  9
+INPUTS x:  9
+INPUTS x:  88
+INPUTS x:  175
+INPUTS x:  1856
+INPUTS x:  88003
+INPUTS x:  476840
+INPUTS x:  8322016
+INPUTS x:  10
+INPUTS x:  63
+INPUTS x:  656
+INPUTS x:  683
+INPUTS x:  39645
+INPUTS x:  329559
+INPUTS x:  329824
+INPUTS x:  80666387
+INPUTS x:  655103685
+INPUTS x:  3462180621
+INPUTS x:  5
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1641]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [4073]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2401]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [10001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3201]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [8001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [9001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [8322016]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [5000]
+ITR_Total loops: 3644 | ITR_Total time taken(secs): 95.084979503
+Run: 4
+INPUTS x:  6
+INPUTS x:  4
+INPUTS x:  61
+INPUTS x:  75
+INPUTS x:  497
+INPUTS x:  75
+INPUTS x:  607
+INPUTS x:  3076
+INPUTS x:  96970
+INPUTS x:  40721
+INPUTS x:  722206
+INPUTS x:  529555
+INPUTS x:  6424588
+INPUTS x:  9466255
+INPUTS x:  24015327
+INPUTS x:  77577007
+INPUTS x:  66643296
+INPUTS x:  53869537
+INPUTS x:  1637716925
+INPUTS x:  471427629
+INPUTS x:  10
+INPUTS x:  0
+INPUTS x:  4
+INPUTS x:  32
+INPUTS x:  519
+INPUTS x:  493
+INPUTS x:  107
+INPUTS x:  7773
+INPUTS x:  38231
+INPUTS x:  59594
+INPUTS x:  579697
+INPUTS x:  349596
+INPUTS x:  1507502
+INPUTS x:  9778886
+INPUTS x:  39436173
+INPUTS x:  16262573
+INPUTS x:  284803685
+INPUTS x:  93169827
+INPUTS x:  659091944
+INPUTS x:  9696777644
+INPUTS x:  7
+INPUTS x:  3
+INPUTS x:  50
+INPUTS x:  96
+INPUTS x:  774
+INPUTS x:  45
+INPUTS x:  6571
+INPUTS x:  1499
+INPUTS x:  24803
+INPUTS x:  67296
+INPUTS x:  441628
+INPUTS x:  580811
+INPUTS x:  1982876
+INPUTS x:  6666368
+INPUTS x:  88176375
+INPUTS x:  57633883
+INPUTS x:  254342437
+INPUTS x:  761414235
+INPUTS x:  4681084213
+INPUTS x:  4374031670
+INPUTS x:  3
+INPUTS x:  6
+INPUTS x:  99
+INPUTS x:  30
+INPUTS x:  998
+INPUTS x:  23
+INPUTS x:  2386
+INPUTS x:  6473
+INPUTS x:  3788
+INPUTS x:  54617
+INPUTS x:  301574
+INPUTS x:  899286
+INPUTS x:  4476396
+INPUTS x:  1073279
+INPUTS x:  23527890
+INPUTS x:  61060082
+INPUTS x:  575539838
+INPUTS x:  877991329
+INPUTS x:  9123901091
+INPUTS x:  3813941538
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  3
+INPUTS x:  6
+INPUTS x:  3
+INPUTS x:  21
+INPUTS x:  888
+INPUTS x:  8368
+INPUTS x:  5
+INPUTS x:  75
+INPUTS x:  268
+INPUTS x:  7756
+INPUTS x:  1
+INPUTS x:  44
+INPUTS x:  276
+INPUTS x:  2
+INPUTS x:  10
+INPUTS x:  70
+INPUTS x:  87
+INPUTS x:  734
+INPUTS x:  54111
+INPUTS x:  5
+INPUTS x:  0
+INPUTS x:  10
+INPUTS x:  26
+INPUTS x:  543
+INPUTS x:  5773
+INPUTS x:  6992
+INPUTS x:  415289
+INPUTS x:  3578178
+INPUTS x:  0
+INPUTS x:  70
+INPUTS x:  76
+INPUTS x:  6833
+INPUTS x:  53458
+INPUTS x:  650887
+INPUTS x:  8268762
+INPUTS x:  63865438
+INPUTS x:  935737760
+INPUTS x:  34295729
+INPUTS x:  6
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [3361]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1366]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7756]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2761]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [17881]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3014]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [5001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [10001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [3578178]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4105]
+ITR_Total loops: 15842 | ITR_Total time taken(secs): 323.1935408459999
+Run: 5
+INPUTS x:  1
+INPUTS x:  9
+INPUTS x:  99
+INPUTS x:  78
+INPUTS x:  447
+INPUTS x:  266
+INPUTS x:  7687
+INPUTS x:  974
+INPUTS x:  43398
+INPUTS x:  18505
+INPUTS x:  765373
+INPUTS x:  556348
+INPUTS x:  3346546
+INPUTS x:  807549
+INPUTS x:  92481754
+INPUTS x:  9088888
+INPUTS x:  846890065
+INPUTS x:  691980649
+INPUTS x:  9908741432
+INPUTS x:  2865177724
+INPUTS x:  2
+INPUTS x:  1
+INPUTS x:  69
+INPUTS x:  4
+INPUTS x:  632
+INPUTS x:  991
+INPUTS x:  3764
+INPUTS x:  9959
+INPUTS x:  28513
+INPUTS x:  16195
+INPUTS x:  219467
+INPUTS x:  720584
+INPUTS x:  5820308
+INPUTS x:  1396491
+INPUTS x:  45494511
+INPUTS x:  1139819
+INPUTS x:  225631894
+INPUTS x:  723849105
+INPUTS x:  1574192314
+INPUTS x:  3153709035
+INPUTS x:  9
+INPUTS x:  6
+INPUTS x:  20
+INPUTS x:  77
+INPUTS x:  833
+INPUTS x:  705
+INPUTS x:  6077
+INPUTS x:  7523
+INPUTS x:  47736
+INPUTS x:  59759
+INPUTS x:  35332
+INPUTS x:  299082
+INPUTS x:  8039904
+INPUTS x:  7560068
+INPUTS x:  58621263
+INPUTS x:  25647943
+INPUTS x:  698821159
+INPUTS x:  476748186
+INPUTS x:  7715860643
+INPUTS x:  1631809554
+INPUTS x:  5
+INPUTS x:  6
+INPUTS x:  90
+INPUTS x:  83
+INPUTS x:  178
+INPUTS x:  736
+INPUTS x:  8901
+INPUTS x:  891
+INPUTS x:  2440
+INPUTS x:  85627
+INPUTS x:  423408
+INPUTS x:  171914
+INPUTS x:  4993870
+INPUTS x:  5242736
+INPUTS x:  12117092
+INPUTS x:  53537903
+INPUTS x:  697853515
+INPUTS x:  482467869
+INPUTS x:  8245853359
+INPUTS x:  7187793262
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  8
+INPUTS x:  5
+INPUTS x:  5
+INPUTS x:  19
+INPUTS x:  258
+INPUTS x:  1947
+INPUTS x:  6
+INPUTS x:  90
+INPUTS x:  43
+INPUTS x:  5406
+INPUTS x:  3
+INPUTS x:  43
+INPUTS x:  10
+INPUTS x:  2538
+INPUTS x:  6
+INPUTS x:  3
+INPUTS x:  4
+INPUTS x:  2
+INPUTS x:  7
+INPUTS x:  52
+INPUTS x:  624
+INPUTS x:  5234
+INPUTS x:  54268
+INPUTS x:  928902
+INPUTS x:  3737991
+INPUTS x:  8
+INPUTS x:  97
+INPUTS x:  253
+INPUTS x:  1377
+INPUTS x:  51585
+INPUTS x:  188070
+INPUTS x:  838569
+INPUTS x:  8195098
+INPUTS x:  40767322
+INPUTS x:  1181398198
+INPUTS x:  1
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1401]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1947]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5406]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2538]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [6001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3001]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [20001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [3737991]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4124]
+ITR_Total loops: 3633 | ITR_Total time taken(secs): 108.08843974199988
+Run: 6
+INPUTS x:  3
+INPUTS x:  1
+INPUTS x:  36
+INPUTS x:  77
+INPUTS x:  80
+INPUTS x:  606
+INPUTS x:  9529
+INPUTS x:  5154
+INPUTS x:  35540
+INPUTS x:  67705
+INPUTS x:  981509
+INPUTS x:  453469
+INPUTS x:  5260488
+INPUTS x:  5252321
+INPUTS x:  72373327
+INPUTS x:  84084893
+INPUTS x:  782217938
+INPUTS x:  858578898
+INPUTS x:  7577691312
+INPUTS x:  2249509164
+INPUTS x:  6
+INPUTS x:  4
+INPUTS x:  70
+INPUTS x:  12
+INPUTS x:  518
+INPUTS x:  13
+INPUTS x:  6811
+INPUTS x:  1077
+INPUTS x:  41263
+INPUTS x:  97826
+INPUTS x:  206616
+INPUTS x:  685834
+INPUTS x:  7633759
+INPUTS x:  7795114
+INPUTS x:  75704119
+INPUTS x:  62269307
+INPUTS x:  977378899
+INPUTS x:  859629966
+INPUTS x:  7800819792
+INPUTS x:  7492529829
+INPUTS x:  10
+INPUTS x:  5
+INPUTS x:  1
+INPUTS x:  73
+INPUTS x:  286
+INPUTS x:  76
+INPUTS x:  4528
+INPUTS x:  2705
+INPUTS x:  40932
+INPUTS x:  86655
+INPUTS x:  423783
+INPUTS x:  792054
+INPUTS x:  1176417
+INPUTS x:  7764025
+INPUTS x:  50845372
+INPUTS x:  98842721
+INPUTS x:  499039294
+INPUTS x:  269642529
+INPUTS x:  2181270049
+INPUTS x:  3418415269
+INPUTS x:  6
+INPUTS x:  7
+INPUTS x:  28
+INPUTS x:  42
+INPUTS x:  663
+INPUTS x:  982
+INPUTS x:  2456
+INPUTS x:  4970
+INPUTS x:  74334
+INPUTS x:  71426
+INPUTS x:  100395
+INPUTS x:  377642
+INPUTS x:  5983042
+INPUTS x:  2667102
+INPUTS x:  55475972
+INPUTS x:  23579703
+INPUTS x:  555655114
+INPUTS x:  498898554
+INPUTS x:  9221138493
+INPUTS x:  5025460684
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  10
+INPUTS x:  9
+INPUTS x:  7
+INPUTS x:  72
+INPUTS x:  443
+INPUTS x:  9714
+INPUTS x:  7
+INPUTS x:  2
+INPUTS x:  257
+INPUTS x:  1218
+INPUTS x:  8
+INPUTS x:  77
+INPUTS x:  107
+INPUTS x:  7952
+INPUTS x:  46978
+INPUTS x:  1
+INPUTS x:  0
+INPUTS x:  1
+INPUTS x:  411
+INPUTS x:  2763
+INPUTS x:  40890
+INPUTS x:  179298
+INPUTS x:  1404143
+INPUTS x:  7020155
+INPUTS x:  764749790
+INPUTS x:  7551910333
+INPUTS x:  7
+INPUTS x:  7
+INPUTS x:  2
+INPUTS x:  67
+INPUTS x:  284
+INPUTS x:  8892
+INPUTS x:  31402
+INPUTS x:  473022
+INPUTS x:  9303782
+INPUTS x:  3
+INPUTS x:  28
+INPUTS x:  409
+INPUTS x:  2735
+INPUTS x:  70345
+INPUTS x:  466715
+INPUTS x:  4861107
+INPUTS x:  81512179
+INPUTS x:  741585447
+INPUTS x:  5643826870
+INPUTS x:  1
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1531]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1440]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [12181]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2153]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [10001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [7001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [7001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [9303782]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4953]
+ITR_Total loops: 13758 | ITR_Total time taken(secs): 284.322931809
+Run: 7
+INPUTS x:  6
+INPUTS x:  5
+INPUTS x:  44
+INPUTS x:  13
+INPUTS x:  317
+INPUTS x:  882
+INPUTS x:  3954
+INPUTS x:  8981
+INPUTS x:  36938
+INPUTS x:  3136
+INPUTS x:  435065
+INPUTS x:  490973
+INPUTS x:  1813948
+INPUTS x:  3373279
+INPUTS x:  16860477
+INPUTS x:  95208220
+INPUTS x:  943689751
+INPUTS x:  311737972
+INPUTS x:  8227678243
+INPUTS x:  1599289513
+INPUTS x:  7
+INPUTS x:  9
+INPUTS x:  2
+INPUTS x:  46
+INPUTS x:  103
+INPUTS x:  838
+INPUTS x:  3654
+INPUTS x:  6262
+INPUTS x:  25853
+INPUTS x:  28558
+INPUTS x:  231111
+INPUTS x:  370138
+INPUTS x:  650642
+INPUTS x:  3257111
+INPUTS x:  69938728
+INPUTS x:  5117477
+INPUTS x:  432853194
+INPUTS x:  822655673
+INPUTS x:  862973837
+INPUTS x:  7418647174
+INPUTS x:  2
+INPUTS x:  5
+INPUTS x:  3
+INPUTS x:  40
+INPUTS x:  102
+INPUTS x:  827
+INPUTS x:  8817
+INPUTS x:  8975
+INPUTS x:  38056
+INPUTS x:  25801
+INPUTS x:  63759
+INPUTS x:  574345
+INPUTS x:  389198
+INPUTS x:  8589330
+INPUTS x:  35017265
+INPUTS x:  22051376
+INPUTS x:  754255850
+INPUTS x:  534757487
+INPUTS x:  1627926413
+INPUTS x:  9381412036
+INPUTS x:  5
+INPUTS x:  9
+INPUTS x:  79
+INPUTS x:  12
+INPUTS x:  379
+INPUTS x:  469
+INPUTS x:  3547
+INPUTS x:  2875
+INPUTS x:  79764
+INPUTS x:  33966
+INPUTS x:  219887
+INPUTS x:  477691
+INPUTS x:  5204134
+INPUTS x:  9451548
+INPUTS x:  13728638
+INPUTS x:  81225929
+INPUTS x:  647414566
+INPUTS x:  176610870
+INPUTS x:  3652236670
+INPUTS x:  4131403736
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  5
+INPUTS x:  4
+INPUTS x:  8
+INPUTS x:  55
+INPUTS x:  686
+INPUTS x:  6163
+INPUTS x:  5
+INPUTS x:  92
+INPUTS x:  137
+INPUTS x:  8425
+INPUTS x:  6
+INPUTS x:  80
+INPUTS x:  887
+INPUTS x:  1581
+INPUTS x:  45252
+INPUTS x:  2
+INPUTS x:  0
+INPUTS x:  12
+INPUTS x:  610
+INPUTS x:  4332
+INPUTS x:  10
+INPUTS x:  2
+INPUTS x:  7
+INPUTS x:  99
+INPUTS x:  867
+INPUTS x:  6907
+INPUTS x:  71962
+INPUTS x:  526285
+INPUTS x:  4525850
+INPUTS x:  5
+INPUTS x:  35
+INPUTS x:  888
+INPUTS x:  7111
+INPUTS x:  35670
+INPUTS x:  347283
+INPUTS x:  6829560
+INPUTS x:  74180221
+INPUTS x:  490533593
+INPUTS x:  8362987238
+INPUTS x:  7
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1945]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8425]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2683]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [20001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3984]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [10001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [20001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4525850]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4911]
+ITR_Total loops: 3003 | ITR_Total time taken(secs): 94.24429032300009
+Run: 8
+INPUTS x:  4
+INPUTS x:  8
+INPUTS x:  97
+INPUTS x:  47
+INPUTS x:  871
+INPUTS x:  173
+INPUTS x:  9834
+INPUTS x:  8418
+INPUTS x:  98870
+INPUTS x:  2843
+INPUTS x:  858538
+INPUTS x:  288470
+INPUTS x:  2077978
+INPUTS x:  9013887
+INPUTS x:  76386914
+INPUTS x:  7193608
+INPUTS x:  992151074
+INPUTS x:  520399672
+INPUTS x:  9395285937
+INPUTS x:  3245446012
+INPUTS x:  3
+INPUTS x:  0
+INPUTS x:  69
+INPUTS x:  46
+INPUTS x:  279
+INPUTS x:  521
+INPUTS x:  2764
+INPUTS x:  3959
+INPUTS x:  92609
+INPUTS x:  15765
+INPUTS x:  790162
+INPUTS x:  510537
+INPUTS x:  9185528
+INPUTS x:  821693
+INPUTS x:  19651455
+INPUTS x:  50149025
+INPUTS x:  26374206
+INPUTS x:  576906362
+INPUTS x:  2560082095
+INPUTS x:  3984143719
+INPUTS x:  7
+INPUTS x:  8
+INPUTS x:  33
+INPUTS x:  81
+INPUTS x:  930
+INPUTS x:  903
+INPUTS x:  2418
+INPUTS x:  5762
+INPUTS x:  9185
+INPUTS x:  68871
+INPUTS x:  942135
+INPUTS x:  986058
+INPUTS x:  8871664
+INPUTS x:  3662881
+INPUTS x:  61301405
+INPUTS x:  67403781
+INPUTS x:  48551196
+INPUTS x:  938704663
+INPUTS x:  84174943
+INPUTS x:  7274545698
+INPUTS x:  8
+INPUTS x:  2
+INPUTS x:  88
+INPUTS x:  94
+INPUTS x:  327
+INPUTS x:  396
+INPUTS x:  3210
+INPUTS x:  9581
+INPUTS x:  51328
+INPUTS x:  93073
+INPUTS x:  678654
+INPUTS x:  443567
+INPUTS x:  8071353
+INPUTS x:  34035
+INPUTS x:  65492890
+INPUTS x:  72159783
+INPUTS x:  825483129
+INPUTS x:  800118710
+INPUTS x:  9867453503
+INPUTS x:  214744191
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  4
+INPUTS x:  6
+INPUTS x:  9
+INPUTS x:  87
+INPUTS x:  740
+INPUTS x:  8851
+INPUTS x:  8
+INPUTS x:  14
+INPUTS x:  784
+INPUTS x:  3530
+INPUTS x:  5
+INPUTS x:  38
+INPUTS x:  422
+INPUTS x:  4109
+INPUTS x:  0
+INPUTS x:  0
+INPUTS x:  83
+INPUTS x:  981
+INPUTS x:  7370
+INPUTS x:  39409
+INPUTS x:  771652
+INPUTS x:  5348485
+INPUTS x:  1726112
+INPUTS x:  325121407
+INPUTS x:  5152871113
+INPUTS x:  7
+INPUTS x:  5
+INPUTS x:  3
+INPUTS x:  59
+INPUTS x:  468
+INPUTS x:  2
+INPUTS x:  74
+INPUTS x:  97
+INPUTS x:  9508
+INPUTS x:  55232
+INPUTS x:  51646
+INPUTS x:  4445099
+INPUTS x:  93834295
+INPUTS x:  262205978
+INPUTS x:  4770190250
+INPUTS x:  4
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [2261]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1713]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [3530]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2625]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [10001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [7001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [5001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4681]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4001]
+ITR_Total loops: 3831 | ITR_Total time taken(secs): 104.63880615800008
+Run: 9
+INPUTS x:  9
+INPUTS x:  8
+INPUTS x:  7
+INPUTS x:  31
+INPUTS x:  132
+INPUTS x:  346
+INPUTS x:  1339
+INPUTS x:  4777
+INPUTS x:  68619
+INPUTS x:  25255
+INPUTS x:  748057
+INPUTS x:  351098
+INPUTS x:  7765374
+INPUTS x:  5445489
+INPUTS x:  42328971
+INPUTS x:  10643755
+INPUTS x:  129282539
+INPUTS x:  156506289
+INPUTS x:  6030162055
+INPUTS x:  9795270065
+INPUTS x:  10
+INPUTS x:  1
+INPUTS x:  13
+INPUTS x:  80
+INPUTS x:  939
+INPUTS x:  164
+INPUTS x:  5565
+INPUTS x:  7960
+INPUTS x:  97417
+INPUTS x:  84494
+INPUTS x:  130530
+INPUTS x:  182893
+INPUTS x:  8609386
+INPUTS x:  1852912
+INPUTS x:  58881435
+INPUTS x:  77112081
+INPUTS x:  658386117
+INPUTS x:  862323063
+INPUTS x:  6925538998
+INPUTS x:  7622476633
+INPUTS x:  3
+INPUTS x:  5
+INPUTS x:  45
+INPUTS x:  38
+INPUTS x:  782
+INPUTS x:  202
+INPUTS x:  5855
+INPUTS x:  2566
+INPUTS x:  85527
+INPUTS x:  41073
+INPUTS x:  643310
+INPUTS x:  437144
+INPUTS x:  7277117
+INPUTS x:  3069114
+INPUTS x:  9282280
+INPUTS x:  38093274
+INPUTS x:  965579242
+INPUTS x:  603606026
+INPUTS x:  3279368590
+INPUTS x:  6131026572
+INPUTS x:  6
+INPUTS x:  3
+INPUTS x:  21
+INPUTS x:  83
+INPUTS x:  986
+INPUTS x:  400
+INPUTS x:  918
+INPUTS x:  9559
+INPUTS x:  5384
+INPUTS x:  34474
+INPUTS x:  46837
+INPUTS x:  734985
+INPUTS x:  7137582
+INPUTS x:  9201094
+INPUTS x:  77009994
+INPUTS x:  19005658
+INPUTS x:  132377366
+INPUTS x:  974494939
+INPUTS x:  7677773789
+INPUTS x:  7655134894
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  5
+INPUTS x:  9
+INPUTS x:  6
+INPUTS x:  9
+INPUTS x:  8
+INPUTS x:  9606
+INPUTS x:  27041
+INPUTS x:  9
+INPUTS x:  43
+INPUTS x:  860
+INPUTS x:  8023
+INPUTS x:  7
+INPUTS x:  2
+INPUTS x:  5
+INPUTS x:  9
+INPUTS x:  45
+INPUTS x:  234
+INPUTS x:  4173
+INPUTS x:  45178
+INPUTS x:  914924
+INPUTS x:  6284476
+INPUTS x:  76808056
+INPUTS x:  121114502
+INPUTS x:  4794886236
+INPUTS x:  9
+INPUTS x:  6
+INPUTS x:  10
+INPUTS x:  54
+INPUTS x:  623
+INPUTS x:  5484
+INPUTS x:  21991
+INPUTS x:  786151
+INPUTS x:  1445041
+INPUTS x:  1
+INPUTS x:  58
+INPUTS x:  775
+INPUTS x:  195
+INPUTS x:  83263
+INPUTS x:  745616
+INPUTS x:  7406393
+INPUTS x:  25549623
+INPUTS x:  414609018
+INPUTS x:  4301733076
+INPUTS x:  7
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [3201]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1863]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8023]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2001]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [5001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [9001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [6001]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [1445041]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4272]
+ITR_Total loops: 12959 | ITR_Total time taken(secs): 245.74087128399992
+Run: 10
+INPUTS x:  1
+INPUTS x:  9
+INPUTS x:  47
+INPUTS x:  83
+INPUTS x:  38
+INPUTS x:  155
+INPUTS x:  305
+INPUTS x:  9489
+INPUTS x:  54093
+INPUTS x:  66485
+INPUTS x:  180337
+INPUTS x:  621476
+INPUTS x:  972530
+INPUTS x:  9626389
+INPUTS x:  85375227
+INPUTS x:  40883442
+INPUTS x:  716538086
+INPUTS x:  76645461
+INPUTS x:  9816854058
+INPUTS x:  41490851
+INPUTS x:  9
+INPUTS x:  5
+INPUTS x:  100
+INPUTS x:  14
+INPUTS x:  798
+INPUTS x:  517
+INPUTS x:  5096
+INPUTS x:  1593
+INPUTS x:  23385
+INPUTS x:  70988
+INPUTS x:  575524
+INPUTS x:  592848
+INPUTS x:  7521116
+INPUTS x:  948992
+INPUTS x:  79644903
+INPUTS x:  92685237
+INPUTS x:  927742760
+INPUTS x:  198760103
+INPUTS x:  7048121378
+INPUTS x:  465774128
+INPUTS x:  0
+INPUTS x:  9
+INPUTS x:  7
+INPUTS x:  74
+INPUTS x:  524
+INPUTS x:  913
+INPUTS x:  6254
+INPUTS x:  8743
+INPUTS x:  55670
+INPUTS x:  36548
+INPUTS x:  117635
+INPUTS x:  630969
+INPUTS x:  4137179
+INPUTS x:  1107156
+INPUTS x:  5500141
+INPUTS x:  98978218
+INPUTS x:  475699689
+INPUTS x:  631610904
+INPUTS x:  9252773609
+INPUTS x:  940866707
+INPUTS x:  2
+INPUTS x:  3
+INPUTS x:  69
+INPUTS x:  45
+INPUTS x:  888
+INPUTS x:  723
+INPUTS x:  6943
+INPUTS x:  5851
+INPUTS x:  56424
+INPUTS x:  978
+INPUTS x:  403653
+INPUTS x:  402675
+INPUTS x:  526793
+INPUTS x:  8421955
+INPUTS x:  77531165
+INPUTS x:  2874992
+INPUTS x:  409595483
+INPUTS x:  594734532
+INPUTS x:  527020101
+INPUTS x:  217847722
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+INPUTS x:  2
+INPUTS x:  6
+INPUTS x:  6
+INPUTS x:  84
+INPUTS x:  999
+INPUTS x:  6
+INPUTS x:  53
+INPUTS x:  368
+INPUTS x:  213
+INPUTS x:  21400
+INPUTS x:  9
+INPUTS x:  74
+INPUTS x:  246
+INPUTS x:  9
+INPUTS x:  1
+INPUTS x:  79
+INPUTS x:  194
+INPUTS x:  402
+INPUTS x:  25494
+INPUTS x:  7
+INPUTS x:  4
+INPUTS x:  74
+INPUTS x:  9
+INPUTS x:  19
+INPUTS x:  484
+INPUTS x:  1
+INPUTS x:  100
+INPUTS x:  466
+INPUTS x:  7320
+INPUTS x:  30730
+INPUTS x:  488382
+INPUTS x:  2131346
+INPUTS x:  22902995
+INPUTS x:  929037414
+INPUTS x:  2941697432
+INPUTS x:  3
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1601]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1000]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [21400]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2461]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [9001]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3438]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [7001]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [7401]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4841]
+Target func: resolve_char, branch: (If @ Line 95 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 95 False), state False with inputs [4455]
+ITR_Total loops: 8418 | ITR_Total time taken(secs): 187.263901927
+
+Total runs taken: 10 | Total time taken(secs): 2000.8365464369997 | Average Time Taken(secs): 200.08365464369996
+Total loops: 91401 | Average loops: 9140.1
+Run: 1
+INPUTS x:  9

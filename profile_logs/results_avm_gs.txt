@@ -1,0 +1,1495 @@
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-1]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1995]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7304]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2047]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3578]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4088]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8193]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4100]
+ITR_Total loops: 84 | ITR_Total time taken(secs): 6.808518341
+Run: 2
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1019]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1345]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [9527]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2048]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3593]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4094]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8195]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4088]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.364513243999999
+Run: 3
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1016]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1153]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7641]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2051]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3589]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4091]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8194]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4097]
+ITR_Total loops: 86 | ITR_Total time taken(secs): 6.533347435000001
+Run: 4
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [1]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1014]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1687]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5136]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2039]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4094]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3593]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4090]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8183]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4091]
+ITR_Total loops: 87 | ITR_Total time taken(secs): 6.338438887000002
+Run: 5
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1024]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1163]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [61676]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2055]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4090]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3580]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4091]
+ITR_Total loops: 89 | ITR_Total time taken(secs): 6.310180584000001
+Run: 6
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1017]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1241]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [6442131]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2053]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3584]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8199]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4090]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.536080220999999
+Run: 7
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1021]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [73557]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2050]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3589]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4087]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8190]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4091]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.607430921999999
+Run: 8
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1667]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [4469]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2052]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3576]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8196]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4088]
+ITR_Total loops: 87 | ITR_Total time taken(secs): 6.31040823
+Run: 9
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1028]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1548]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7643]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2042]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3577]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8191]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4086]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.302174569999998
+Run: 10
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1266]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2822]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2051]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4088]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3585]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4093]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.370526704999996
+Run: 11
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1283]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [702102]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2046]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3588]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4094]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8190]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4089]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.499604787999999
+Run: 12
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1984]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [38863]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2056]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3580]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8198]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4105]
+ITR_Total loops: 87 | ITR_Total time taken(secs): 6.382504560000001
+Run: 13
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1013]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1938]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8117]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2039]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3576]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4096]
+ITR_Total loops: 89 | ITR_Total time taken(secs): 6.661754067000004
+Run: 14
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1029]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [354487]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2056]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3586]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8197]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4099]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.804846655999995
+Run: 15
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 9 | ITR_Total time taken(secs): -8.94699999776094e-06
+Run: 16
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1019]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [642611]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2043]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4087]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3583]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8188]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4102]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.807815696000006
+Run: 17
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1015]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1826]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [940242]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2052]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3583]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8195]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4104]
+ITR_Total loops: 84 | ITR_Total time taken(secs): 6.4217900430000014
+Run: 18
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1031]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1592]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [54012]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2057]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4099]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3592]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8191]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4096]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.368405245999995
+Run: 19
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1027]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [167142]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2052]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3585]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8193]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4097]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.591011983000001
+Run: 20
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1414]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7850]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2043]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3575]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8182]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4097]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.306339293999997
+Run: 21
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1022]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1497]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2630]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2057]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3584]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8196]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4088]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 6.60567082899999
+Run: 22
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1026]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [4551]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2046]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4100]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3588]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4088]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8199]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4097]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.501353143000017
+Run: 23
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1033]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [14760]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2049]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3578]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4097]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.587518418000002
+Run: 24
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [9]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1946]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [9956]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2051]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3582]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4102]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8185]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4087]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.316707430000008
+Run: 25
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1029]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1537]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5557]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2056]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4102]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3586]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4091]
+ITR_Total loops: 92 | ITR_Total time taken(secs): 6.6134179409999945
+Run: 26
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1018]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1061]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8930]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2054]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4099]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3592]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8199]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4088]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.060692169000021
+Run: 27
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1015]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1786]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [6293]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2054]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4091]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3590]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4103]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8181]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4094]
+ITR_Total loops: 90 | ITR_Total time taken(secs): 6.387937424
+Run: 28
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-9]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1021]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1509]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8824]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2041]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3574]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8194]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4102]
+ITR_Total loops: 92 | ITR_Total time taken(secs): 6.615889158000016
+Run: 29
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [47370]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2048]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4102]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3593]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4103]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8194]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4091]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.574111326000008
+Run: 30
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1030]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1457]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8330]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2046]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4094]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3576]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4099]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8192]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4094]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.116863343999995
+Run: 31
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [0]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1175]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8117]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2046]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3578]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8201]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4090]
+ITR_Total loops: 92 | ITR_Total time taken(secs): 6.521641203999991
+Run: 32
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1029]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [823256]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2044]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3577]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8181]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4091]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.617967916999987
+Run: 33
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1021]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1335]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7497]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2051]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4090]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3580]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8193]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4097]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.039420815999989
+Run: 34
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1022]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1341]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [41271]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2046]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3591]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4099]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8184]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4102]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.1429374850000045
+Run: 35
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1021]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1651]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7298]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2042]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4090]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3593]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4090]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4090]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 6.430448993999988
+Run: 36
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-9]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1853]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2103]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2043]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4091]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3584]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8196]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4098]
+ITR_Total loops: 90 | ITR_Total time taken(secs): 6.513407104999999
+Run: 37
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1016]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [6837]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2057]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3593]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8188]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4088]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.572984251999998
+Run: 38
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-9]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1017]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1724]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8807]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2047]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4091]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3576]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8197]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4095]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 6.574577743999981
+Run: 39
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 20 | ITR_Total time taken(secs): -8.421000018188352e-06
+Run: 40
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 20 | ITR_Total time taken(secs): -4.942859706999997
+Run: 41
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1888]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2974]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2057]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4088]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3578]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4089]
+ITR_Total loops: 93 | ITR_Total time taken(secs): 6.814681968999992
+Run: 42
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [0]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1013]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [30702]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2049]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4094]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3581]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8195]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.680598616999987
+Run: 43
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 9 | ITR_Total time taken(secs): -9.823999960190122e-06
+Run: 44
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1027]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1524]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [446914]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2037]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4091]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3591]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4089]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4103]
+ITR_Total loops: 89 | ITR_Total time taken(secs): 6.909071291000032
+Run: 45
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1032]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1763]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5906]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2056]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4091]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3590]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4100]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8199]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4100]
+ITR_Total loops: 86 | ITR_Total time taken(secs): 6.3260448419999875
+Run: 46
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1025]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1602]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [9667]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2037]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4088]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3574]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4100]
+ITR_Total loops: 90 | ITR_Total time taken(secs): 6.244682295000018
+Run: 47
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1032]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1224]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7222]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2038]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4091]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3592]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8199]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4095]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.015760537000006
+Run: 48
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1026]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [90574]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2052]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3587]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8194]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4093]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.232407920000014
+Run: 49
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1028]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1947]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [78498]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2051]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3592]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8197]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4104]
+ITR_Total loops: 90 | ITR_Total time taken(secs): 6.81946951499998
+Run: 50
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 21 | ITR_Total time taken(secs): -7.943000014165591e-06
+Run: 51
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [9]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1072]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2357]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2054]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4094]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3585]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4090]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8182]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4091]
+ITR_Total loops: 86 | ITR_Total time taken(secs): 6.647952047000047
+Run: 52
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-1]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1016]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1485]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [447032]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2042]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4099]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3586]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4102]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8182]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.554966572000012
+Run: 53
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1015]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1578]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8993]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2053]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3583]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8196]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4090]
+ITR_Total loops: 93 | ITR_Total time taken(secs): 6.614345103000005
+Run: 54
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1019]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1652]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [48170]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2046]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3579]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4100]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8195]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4102]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 6.69533067499998
+Run: 55
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [9]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1015]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1379]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5012]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2048]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3592]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8195]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4097]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 6.493598409000015
+Run: 56
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 25 | ITR_Total time taken(secs): -8.404000027439906e-06
+Run: 57
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1019]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1872]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [3980056]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2049]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4103]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3582]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4089]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8192]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4089]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.225737444999993
+Run: 58
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1018]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1979]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [215450]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2038]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3593]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8185]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4104]
+ITR_Total loops: 90 | ITR_Total time taken(secs): 6.592411131000006
+Run: 59
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1021]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1347]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [9987]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2040]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4087]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3591]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8185]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4101]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 6.511529003000021
+Run: 60
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 20 | ITR_Total time taken(secs): -8.02300002078482e-06
+Run: 61
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1016]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1521]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [18931]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2043]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3582]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8195]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4099]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 6.644301132999999
+Run: 62
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1017]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7992]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2041]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3582]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8186]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4104]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.51027577800005
+Run: 63
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1029]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1388]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2049]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2050]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3582]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4100]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8185]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4096]
+ITR_Total loops: 94 | ITR_Total time taken(secs): 6.455177098999968
+Run: 64
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1028]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [3127]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2048]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4102]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3584]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4089]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4101]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.480792103999988
+Run: 65
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1017]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5556]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2045]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3582]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8186]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4102]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.495755938000002
+Run: 66
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1014]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1323]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [6217]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2047]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3578]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8187]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4101]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 6.856310444999963
+Run: 67
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1024]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [70691]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2045]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3578]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4100]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8194]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4089]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.755656885000008
+Run: 68
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1026]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1163]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7089]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2048]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4088]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3586]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8196]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 87 | ITR_Total time taken(secs): 5.656440514999986
+Run: 69
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1431]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [24158]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2039]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3592]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8182]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4090]
+ITR_Total loops: 90 | ITR_Total time taken(secs): 5.817317283000023
+Run: 70
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1032]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1922]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [7369]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2048]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4102]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3584]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8192]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4098]
+ITR_Total loops: 87 | ITR_Total time taken(secs): 5.318608447999964
+Run: 71
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 9 | ITR_Total time taken(secs): -6.842000004780857e-06
+Run: 72
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [385827]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2051]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3580]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8181]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4090]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 5.869482247000008
+Run: 73
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1028]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1249]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [307271]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2056]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3588]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8196]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4093]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 5.718049301000008
+Run: 74
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-1]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2319]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2043]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3584]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8193]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4096]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 5.599656933000006
+Run: 75
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-1]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1026]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1382]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5910]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2037]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4102]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3578]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4103]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8193]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 5.513655362999998
+Run: 76
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1695]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5457]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2038]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4103]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3593]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8197]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 89 | ITR_Total time taken(secs): 5.816824146999977
+Run: 77
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1875]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [3890]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2057]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3584]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8183]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4098]
+ITR_Total loops: 85 | ITR_Total time taken(secs): 5.766950065000003
+Run: 78
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 9 | ITR_Total time taken(secs): -1.152200002252357e-05
+Run: 79
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [30165]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2057]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3574]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4103]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8192]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 5.848159683999995
+Run: 80
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1015]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1707]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [3133]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2042]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4100]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3592]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8184]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4094]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 5.267825967999954
+Run: 81
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [0]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1018]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1941]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [80978]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2044]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3576]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4105]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8191]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4100]
+ITR_Total loops: 83 | ITR_Total time taken(secs): 5.177946308000003
+Run: 82
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-3]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1029]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1560]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [69644]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2037]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4100]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3585]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8188]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4097]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 5.435186803000022
+Run: 83
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1339]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [93492]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2049]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3579]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4094]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8185]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4092]
+ITR_Total loops: 89 | ITR_Total time taken(secs): 5.404491483000015
+Run: 84
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1908]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2069]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2054]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4088]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3586]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4087]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8189]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4090]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 5.333430293999982
+Run: 85
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [10]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1020]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1586]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2211]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2053]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3581]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8183]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4093]
+ITR_Total loops: 96 | ITR_Total time taken(secs): 5.41101624199996
+Run: 86
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 21 | ITR_Total time taken(secs): -6.829000085417647e-06
+Run: 87
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1024]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1022]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [679751]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2056]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3577]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8185]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4099]
+ITR_Total loops: 93 | ITR_Total time taken(secs): 5.738490651000006
+Run: 88
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 9 | ITR_Total time taken(secs): -6.574000053660711e-06
+Run: 89
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1029]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1164]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [1490449]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2044]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4096]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3580]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4089]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8190]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4095]
+ITR_Total loops: 90 | ITR_Total time taken(secs): 5.504027780000001
+Run: 90
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-7]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1024]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [28590]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2057]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4087]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3576]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8194]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4101]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 5.413449249999985
+Run: 91
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1017]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1786]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [48032]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2046]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4085]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3591]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8201]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 91 | ITR_Total time taken(secs): 5.533019550000063
+Run: 92
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-2]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1027]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1405]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [244589]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2055]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3576]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4101]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8197]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 5.4682664050000085
+Run: 93
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1030]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1228]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [87438]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2039]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4098]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3591]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4086]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8184]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4096]
+ITR_Total loops: 92 | ITR_Total time taken(secs): 5.5879089459999705
+Run: 94
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [8]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1493]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [9330]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2057]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3587]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8198]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4087]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 5.078934193999999
+Run: 95
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [4]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1347]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [8052]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2056]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4099]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3588]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4104]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8185]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4093]
+ITR_Total loops: 87 | ITR_Total time taken(secs): 5.639831915000059
+Run: 96
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [-1]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1427]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [68523]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2042]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4091]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3588]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4102]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8182]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4105]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 5.738247096000009
+Run: 97
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [0]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1023]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1570]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [5137]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2040]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4099]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3585]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4095]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8200]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4090]
+ITR_Total loops: 88 | ITR_Total time taken(secs): 5.573525712999981
+Run: 98
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [5]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1017]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs [1127]
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [2395]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2053]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4103]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3575]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4092]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8186]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 85 | ITR_Total time taken(secs): 5.4719549989999905
+Run: 99
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Current run failed
+ITR_Total loops: 21 | ITR_Total time taken(secs): -8.35499997720035e-06
+Run: 100
+Target func: resolve_hero, branch: (If @ Line 79 True), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 79 True), state False with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state True with inputs Unable to find solution
+Target func: resolve_hero, branch: (If @ Line 81 False), state False with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 85 True), state True with inputs [6]
+Target func: resolve_char, branch: (If @ Line 85 True), state False with inputs [1022]
+Target func: resolve_char, branch: (If @ Line 87 False), state True with inputs Unable to find solution
+Target func: resolve_char, branch: (If @ Line 87 False), state False with inputs [3982]
+Target func: resolve_char, branch: (If @ Line 89 False), state True with inputs [2044]
+Target func: resolve_char, branch: (If @ Line 89 False), state False with inputs [4093]
+Target func: resolve_char, branch: (If @ Line 91 False), state True with inputs [3589]
+Target func: resolve_char, branch: (If @ Line 91 False), state False with inputs [4097]
+Target func: resolve_char, branch: (If @ Line 93 False), state True with inputs [8185]
+Target func: resolve_char, branch: (If @ Line 93 False), state False with inputs [4085]
+ITR_Total loops: 76 | ITR_Total time taken(secs): 6.400130133999937
+
+Total runs taken: 100 | Total time taken(secs): 545.7989226409999 | Average Time Taken(secs): 5.457989226409999
+Total loops: 7682 | Average loops: 76.82
+Run: 1
